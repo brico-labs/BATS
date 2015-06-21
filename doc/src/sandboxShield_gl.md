@@ -241,3 +241,24 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 
 
 # Meta
+
+Este documento está escrito en
+[Markdown-Pandoc](http://pandoc.org/README.html). Pandoc e un sistema
+moi sinxelo de documentación que permite xerar multiples formatos de
+saída.
+
+As fontes do documento están no directorio __doc/src__. Os formatos de
+saída son este fichero __README.md__ en formato Markdown-github e os
+documentos que podes atopar no directorio __doc/out__ incluindo un
+pdf.
+
+Os documentos xeneranse automáticamente a partir do ficheiro fonte sen
+mai que executar:
+
+~~~~{bash}
+$ cd doc
+$ ./makeDoc
+~~~~
+
+É importante cambiar ao directorio doc antes de executar o
+__makeDoc__.

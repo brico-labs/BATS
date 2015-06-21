@@ -190,6 +190,19 @@ Requisitos
 Meta
 ====
 
+Este documento está escrito en [Markdown-Pandoc](http://pandoc.org/README.html). Pandoc e un sistema moi sinxelo de documentación que permite xerar multiples formatos de saída.
+
+As fontes do documento están no directorio **doc/src**. Os formatos de saída son este fichero **README.md** en formato Markdown-github e os documentos que podes atopar no directorio **doc/out** incluindo un pdf.
+
+Os documentos xeneranse automáticamente a partir do ficheiro fonte sen mai que executar:
+
+``` {bash}
+$ cd doc
+$ ./makeDoc
+```
+
+É importante cambiar ao directorio doc antes de executar o **makeDoc**.
+
 [1] EDA suite en inglés
 
 [2] Isto de ter varios xeitos de facer unha cousa é habitual en KiCad como iremos vendo
