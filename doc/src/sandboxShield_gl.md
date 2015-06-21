@@ -80,7 +80,9 @@ Unha vez que temos preparado o directorio do proxecto activamos git
 para iniciar o control de versións.
 
 ----
+
 Describir a configuración de git??
+
 ----
 
 # Biblioteca de compoñentes incluindo un shield para Arduino
@@ -118,7 +120,9 @@ git a propia páxina da biblioteca suxírenos o xeito mais adoitado de
 facer a instalación: coma un submódulo git do noso proxecto.
 
 ----
+
 Describir as vantaxes de usar un git submodule
+
 ----
 
 ## Engadir a biblioteca como un submódulo de git
@@ -203,7 +207,9 @@ ficheiro.
 # Tutorial
 
 ----
+
 Pantalla xeral de KiCad opcións, citar a lista de hotkeys
+
 ----
 
 Abrimos un novo proxecto: File::New Project (Ctrl+N)
