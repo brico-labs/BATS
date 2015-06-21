@@ -19,16 +19,32 @@ Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
 
 # Qué é KiCad?
 
-KiCad es una suite de diseño electrónico automatizado
-^[EDA suite en inglés]. KiCad permite o diseño tanto de esquemas de
+KiCad é unha suite de deseño electrónico automatizado
+^[EDA suite en inglés]. KiCad permite o deseño tanto de esquemas de
 circuitos como das placas de circuito impreso a nivel profesional. Hai
 versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
-está dispoñible para Windows, Linux e Apple OS X. E un programa
-gratuito distribuido baixo licencia __GNU GPL v2__.
+está dispoñible para Windows, Linux e Apple OS X. É un programa
+gratuito e __libre__ distribuido baixo licencia __GNU GPL v2__.
 
 Mellor ainda, a suite KiCad é a elexida polo CERN para o
-desenvolvemento e diseño de electrónica. É de esperar que con este
+desenvolvemento e deseño de electrónica. É de esperar que con este
 respaldo a suite mellore ainda mais.
+
+# Requisitos do shield
+
+Queremos facer un shield sinxelo para a enseñanza.
+
+* 1 x LDR
+* 3-4 x Botóns
+* 1 x RGB
+* 1 x LDR
+* 1 x Pines servo
+* 1 x sensor temp
+* 2 x potenciómetros
+* 1 x LED bermello
+* 1 x LED amarelo
+* 1 x LED verde
+* 1 x Zoador
 
 
 # Instalación de KiCad (en Ubuntu)
@@ -92,7 +108,7 @@ As bibliotecas de KiCad están organizadas en duas partes:
 * Un ficheiro que contén os símbolos dos compoñentes para usarse no
   editor de esquemas electrónicos __Eescheme__
 
-* As pegadas dos compoñentes electrónicos, e decir a forma que ten que
+* As pegadas dos compoñentes electrónicos, é dicir, a forma que ten que
   ter a pista da placa de circuito impreso (_PCB_) para poder soldar o
   compoñente.
 
@@ -111,13 +127,12 @@ tamén en github en:
 As bibliotecas de KiCad poden estar almacenadas en diferentes
 directorios do noso ordenador. Poderíamos engadir as bibliotecas que
 usemos en algún subdirectorio de _/usr/share/kicad_ ou de
-_/usr/local/share_. Esta podería ser unha boa estratexia en un
-servidor compartido por varios usuarios. Tamén poderíamos descarregar
-todas as bibliotecas a un directorio común do noso _home_.
-
-Pero como estamos facendo un control de versións do noso proxecto con
-git a propia páxina da biblioteca suxírenos o xeito mais adoitado de
-facer a instalación: coma un submódulo git do noso proxecto.
+_/usr/local/share_. Esta podería ser unha boa estratexia nun servidor
+compartido por varios usuarios. Tamén poderíamos descarregar todas as
+bibliotecas a un directorio común do noso _home_. Pero como estamos
+facendo un control de versións do noso proxecto con git a propia
+páxina da biblioteca suxírenos o xeito mais adoitado de facer a
+instalación: coma un submódulo git do noso proxecto.
 
 ----
 
@@ -156,6 +171,9 @@ En realidade os ficheiros que compoñen a biblioteca non pertencen ao
 noso depósito de software, git só leva conta da versión da biblioteca
 de Freetronics que estamos a usar.
 
+Se queres saber mais de esta potente funcionalidade de git podes leer:
+<http://www.git-scm.com/book/en/v2/Git-Tools-Submodules>
+
 ## Configurar _Eescheme_ para usar a nova biblioteca
 
 No menú Preferences -> Component Library sinalamos na ventá inferior o
@@ -163,7 +181,8 @@ directorio do noso proxecto. Na ventá superior engadimos o ficheiro da
 biblioteca.
 
 No github da biblioteca nos aconsellan poñer a biblioteca de primeira
-na nosa lista por que definen todo tipo de compoñentes.
+na nosa lista por que definen todo tipo de compoñentes. Nos de momento
+seguimos o consello de Freetronics, e a puxemos de primeira.
 
 ## Configurar acceso aos datos de pegadas (_footprints_) en pcbnew
 
@@ -200,11 +219,13 @@ ficheiro.
 ## Ainda mais bibliotecas
 <http://www.kicadlib.org/>
 
-# Instalación das bibliotecas
+## Instalación das bibliotecas
 
 <http://www.arunet.co.uk/tkboyd/ele2pcbka.htm>
 
 # Tutorial
+
+## A pantalla xeral
 
 ----
 
@@ -212,8 +233,18 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 ----
 
+## Abrindo un proxecto
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N)
 __sandbox_shield__
+
+----
+
+falar das propiedades do documento
+
+----
+
+## Crear e Editar o esquema do circuito
 
 O primeiro que imos facer é o esquema do circuito. Para isto temos que
 usar a ferramenta _Eeschema_ que podemos atopar en tres lugares
@@ -224,20 +255,19 @@ fiestra, ou có atallo __Ctrl+E__.
 
 Abrimos eescheme e creamos un novo ficheiro de esquema.
 
+### Checklist
+* Crear o esquema do circuito (usando Eescheme)
+* Chequeo de erros (opción _Perform Electrical Rules Check_)
+* Xerar o ficheiro NET (opción _Generate netlist_)
+* Asignar as pegadas (_footprints_) aos compoñentes
 
 
-# Requisitos
+### Tips
 
-* 1 x LDR
-* 3-4 x Botóns
-* 1 x RGB
-* 1 x LDR
-* 1 x Pines servo
-* 1 x sensor temp
-* 2 x potenciómetros
-* 1 x LED bermello
-* 1 x LED amarelo
-* 1 x LED verde
+* Falar dos flags
+    * Power flags
+    * Not used flag
+
 
 
 # Meta

@@ -15,16 +15,46 @@ Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
 
 \section{Qué é KiCad?}\label{quuxe9-uxe9-kicad}
 
-KiCad es una suite de diseño electrónico automatizado \footnote{EDA
-  suite en inglés}. KiCad permite o diseño tanto de esquemas de
+KiCad é unha suite de deseño electrónico automatizado \footnote{EDA
+  suite en inglés}. KiCad permite o deseño tanto de esquemas de
 circuitos como das placas de circuito impreso a nivel profesional. Hai
 versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
-está dispoñible para Windows, Linux e Apple OS X. E un programa gratuito
-distribuido baixo licencia \textbf{GNU GPL v2}.
+está dispoñible para Windows, Linux e Apple OS X. É un programa gratuito
+e \textbf{libre} distribuido baixo licencia \textbf{GNU GPL v2}.
 
 Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento
-e diseño de electrónica. É de esperar que con este respaldo a suite
+e deseño de electrónica. É de esperar que con este respaldo a suite
 mellore ainda mais.
+
+\section{Requisitos do shield}\label{requisitos-do-shield}
+
+Queremos facer un shield sinxelo para a enseñanza.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  1 x LDR
+\item
+  3-4 x Botóns
+\item
+  1 x RGB
+\item
+  1 x LDR
+\item
+  1 x Pines servo
+\item
+  1 x sensor temp
+\item
+  2 x potenciómetros
+\item
+  1 x LED bermello
+\item
+  1 x LED amarelo
+\item
+  1 x LED verde
+\item
+  1 x Zoador
+\end{itemize}
 
 \section{Instalación de KiCad (en
 Ubuntu)}\label{instalaciuxf3n-de-kicad-en-ubuntu}
@@ -92,7 +122,7 @@ As bibliotecas de KiCad están organizadas en duas partes:
   Un ficheiro que contén os símbolos dos compoñentes para usarse no
   editor de esquemas electrónicos \textbf{Eescheme}
 \item
-  As pegadas dos compoñentes electrónicos, e decir a forma que ten que
+  As pegadas dos compoñentes electrónicos, é dicir, a forma que ten que
   ter a pista da placa de circuito impreso (\emph{PCB}) para poder
   soldar o compoñente.
 \end{itemize}
@@ -109,13 +139,12 @@ en github en:
 As bibliotecas de KiCad poden estar almacenadas en diferentes
 directorios do noso ordenador. Poderíamos engadir as bibliotecas que
 usemos en algún subdirectorio de \emph{/usr/share/kicad} ou de
-\emph{/usr/local/share}. Esta podería ser unha boa estratexia en un
+\emph{/usr/local/share}. Esta podería ser unha boa estratexia nun
 servidor compartido por varios usuarios. Tamén poderíamos descarregar
-todas as bibliotecas a un directorio común do noso \emph{home}.
-
-Pero como estamos facendo un control de versións do noso proxecto con
-git a propia páxina da biblioteca suxírenos o xeito mais adoitado de
-facer a instalación: coma un submódulo git do noso proxecto.
+todas as bibliotecas a un directorio común do noso \emph{home}. Pero
+como estamos facendo un control de versións do noso proxecto con git a
+propia páxina da biblioteca suxírenos o xeito mais adoitado de facer a
+instalación: coma un submódulo git do noso proxecto.
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -155,6 +184,9 @@ En realidade os ficheiros que compoñen a biblioteca non pertencen ao
 noso depósito de software, git só leva conta da versión da biblioteca de
 Freetronics que estamos a usar.
 
+Se queres saber mais de esta potente funcionalidade de git podes leer:
+\url{http://www.git-scm.com/book/en/v2/Git-Tools-Submodules}
+
 \subsection{\texorpdfstring{Configurar \emph{Eescheme} para usar a nova
 biblioteca}{Configurar Eescheme para usar a nova biblioteca}}\label{configurar-eescheme-para-usar-a-nova-biblioteca}
 
@@ -163,7 +195,8 @@ inferior o directorio do noso proxecto. Na ventá superior engadimos o
 ficheiro da biblioteca.
 
 No github da biblioteca nos aconsellan poñer a biblioteca de primeira na
-nosa lista por que definen todo tipo de compoñentes.
+nosa lista por que definen todo tipo de compoñentes. Nos de momento
+seguimos o consello de Freetronics, e a puxemos de primeira.
 
 \subsection{\texorpdfstring{Configurar acceso aos datos de pegadas
 (\emph{footprints}) en
@@ -203,12 +236,14 @@ currada}\label{outra-biblioteca-moi-currada}
 
 \url{http://www.kicadlib.org/}
 
-\section{Instalación das
+\subsection{Instalación das
 bibliotecas}\label{instalaciuxf3n-das-bibliotecas}
 
 \url{http://www.arunet.co.uk/tkboyd/ele2pcbka.htm}
 
 \section{Tutorial}\label{tutorial}
+
+\subsection{A pantalla xeral}\label{a-pantalla-xeral}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -216,8 +251,19 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
+\subsection{Abrindo un proxecto}\label{abrindo-un-proxecto}
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N)
 \textbf{sandbox\_shield}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+falar das propiedades do documento
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{Crear e Editar o esquema do
+circuito}\label{crear-e-editar-o-esquema-do-circuito}
 
 O primeiro que imos facer é o esquema do circuito. Para isto temos que
 usar a ferramenta \emph{Eeschema} que podemos atopar en tres lugares
@@ -228,30 +274,32 @@ ferramentas, no menú de KiCad no título da fiestra, ou có atallo
 
 Abrimos eescheme e creamos un novo ficheiro de esquema.
 
-\section{Requisitos}\label{requisitos}
+\subsubsection{Checklist}\label{checklist}
 
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  1 x LDR
+  Crear o esquema do circuito (usando Eescheme)
 \item
-  3-4 x Botóns
+  Chequeo de erros (opción \emph{Perform Electrical Rules Check})
 \item
-  1 x RGB
+  Xerar o ficheiro NET (opción \emph{Generate netlist})
+\end{itemize}
+
+\subsubsection{Tips}\label{tips}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
 \item
-  1 x LDR
-\item
-  1 x Pines servo
-\item
-  1 x sensor temp
-\item
-  2 x potenciómetros
-\item
-  1 x LED bermello
-\item
-  1 x LED amarelo
-\item
-  1 x LED verde
+  Falar dos flags
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Power flags
+  \item
+    Not used flag
+  \end{itemize}
 \end{itemize}
 
 \section{Meta}\label{meta}
