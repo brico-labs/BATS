@@ -1,21 +1,8 @@
-\section{Qué é KiCad?}\label{quuxe9-uxe9-kicad}
-
-Unha breve descripción da suite KiCad KiCad es una suite de diseño
-electrónico automatizado \footnote{EDA suite en inglés}. KiCad permite o
-diseño tanto de esquemas de circuitos como das placas de circuito
-impreso a nivel profesional. Hai versións de KiCada dispoñibles para
-Windows, Linux, Apple OS X. A suite está dispoñible para Windows, Linux
-e Apple OS X. E un programa gratuito distribuido baixo licencia
-\textbf{GNU GPL v2}.
-
-Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento
-e diseño de electrónica. É de esperar que con este respaldo a suite
-mellore ainda mais.
-
 \section{Qué imos facer? Qué se describe en este
 documento?}\label{quuxe9-imos-facer-quuxe9-se-describe-en-este-documento}
 
-Imos deseñar un shield para Arduino.
+Imos deseñar un shield para Arduino. Usando
+\href{http://www.kicad-pcb.org/}{KiCad}
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non
 vamos a redactar un tutorial detallado nin de deseño de circuitos nin do
@@ -25,6 +12,19 @@ recomendable, elaborado por
 \href{https://www.youtube.com/playlist?list=PL1Hs_F1k2mdRVYDtdWd7tQKDZTfxop7np}{TutoElectro}
 
 Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
+
+\section{Qué é KiCad?}\label{quuxe9-uxe9-kicad}
+
+KiCad es una suite de diseño electrónico automatizado \footnote{EDA
+  suite en inglés}. KiCad permite o diseño tanto de esquemas de
+circuitos como das placas de circuito impreso a nivel profesional. Hai
+versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
+está dispoñible para Windows, Linux e Apple OS X. E un programa gratuito
+distribuido baixo licencia \textbf{GNU GPL v2}.
+
+Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento
+e diseño de electrónica. É de esperar que con este respaldo a suite
+mellore ainda mais.
 
 \section{Instalación de KiCad (en
 Ubuntu)}\label{instalaciuxf3n-de-kicad-en-ubuntu}
@@ -89,7 +89,7 @@ As bibliotecas de KiCad están organizadas en duas partes:
 
 \begin{itemize}
 \item
-  Un fichero que contén os símbolos dos compoñentes para usarse no
+  Un ficheiro que contén os símbolos dos compoñentes para usarse no
   editor de esquemas electrónicos \textbf{Eescheme}
 \item
   As pegadas dos compoñentes electrónicos, e decir a forma que ten que
@@ -123,6 +123,77 @@ Describir as vantaxes de usar un git submodule\tabularnewline
 \bottomrule
 \end{longtable}
 
+\subsection{Engadir a biblioteca como un submódulo de
+git}\label{engadir-a-biblioteca-como-un-submuxf3dulo-de-git}
+
+Dende o directorio principal de noso proxecto descarregamos a biblioteca
+de Freetronics coma un submodulo do noso proxecto:
+
+\begin{verbatim}
+git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary
+\end{verbatim}
+
+Despois de engadir a biblioteca como un submódulo se consultamos o
+estado git do noso proxecto aparecerán dous novos ficheiros:
+
+\begin{verbatim}
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    new file:   .gitmodules
+    new file:   kicad/ftlibrary
+\end{verbatim}
+
+Git engadíu automáticamente os dous novos ficheiros, o directorio que
+contén a nosa biblioteca eo ficheiro \textbf{.gitmodule} que levará o
+control de todolos submódulos que usemos.
+
+En realidade os ficheiros que compoñen a biblioteca non pertencen ao
+noso depósito de software, git só leva conta da versión da biblioteca de
+Freetronics que estamos a usar.
+
+\subsection{\texorpdfstring{Configurar \emph{Eescheme} para usar a nova
+biblioteca}{Configurar Eescheme para usar a nova biblioteca}}\label{configurar-eescheme-para-usar-a-nova-biblioteca}
+
+No menú Preferences -\textgreater{} Component Library sinalamos na ventá
+inferior o directorio do noso proxecto. Na ventá superior engadimos o
+ficheiro da biblioteca.
+
+No github da biblioteca nos aconsellan poñer a biblioteca de primeira na
+nosa lista por que definen todo tipo de compoñentes.
+
+\subsection{\texorpdfstring{Configurar acceso aos datos de pegadas
+(\emph{footprints}) en
+pcbnew}{Configurar acceso aos datos de pegadas (footprints) en pcbnew}}\label{configurar-acceso-aos-datos-de-pegadas-footprints-en-pcbnew}
+
+Configuramos un ficheiro para o noso proxecto declarando os
+\emph{footprint} extra que imos a utilizar.
+
+\begin{verbatim}
+(fp_lib_table
+  (lib
+   (name FT)
+   (type KiCad)
+   (uri ${KIPRJMOD}/ftlibrary/freetronics_footprints.pretty)
+   (options "")
+   (descr "Freetronics Kicad Library")
+   )
+)
+\end{verbatim}
+
+Engadimos o novo ficheiro ao noso repositorio
+
+\begin{verbatim}
+git add fp-lib-table
+\end{verbatim}
+
+Abrimos \emph{Pcbnew} e no menú
+\emph{Preferences-\textgreater{}Footprint Libraries Manager} comprobamos
+que na pestaña \emph{Project Specific Libraries} figura o noso ficheiro.
+
 \subsection{Outra biblioteca moi
 currada}\label{outra-biblioteca-moi-currada}
 
@@ -155,11 +226,32 @@ diferentes \footnote{Isto de ter varios xeitos de facer unha cousa é
 ferramentas, no menú de KiCad no título da fiestra, ou có atallo
 \textbf{Ctrl+E}.
 
-Abrimos eescheme e creamos un novo fichero de esquema.
+Abrimos eescheme e creamos un novo ficheiro de esquema.
 
 \section{Requisitos}\label{requisitos}
 
-1 x LDR 3-4 x Botóns 1 x RGB 1 x LDR 1 x Pines servo 1 x sensor temp 2 x
-potenciómetros 1 x LED bermello 1 x LED amarelo 1 x LED verde
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  1 x LDR
+\item
+  3-4 x Botóns
+\item
+  1 x RGB
+\item
+  1 x LDR
+\item
+  1 x Pines servo
+\item
+  1 x sensor temp
+\item
+  2 x potenciómetros
+\item
+  1 x LED bermello
+\item
+  1 x LED amarelo
+\item
+  1 x LED verde
+\end{itemize}
 
 \section{Meta}\label{meta}

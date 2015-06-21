@@ -2,23 +2,10 @@
 % BricoLabs
 % 20 de xunio de 2015
 
-# Qué é KiCad?
-
-Unha breve descripción da suite KiCad KiCad es una suite de diseño
-electrónico automatizado ^[EDA suite en inglés]. KiCad permite o
-diseño tanto de esquemas de circuitos como das placas de circuito
-impreso a nivel profesional. Hai versións de KiCada dispoñibles para
-Windows, Linux, Apple OS X. A suite está dispoñible para Windows,
-Linux e Apple OS X. E un programa gratuito distribuido baixo licencia
-__GNU GPL v2__.
-
-Mellor ainda, a suite KiCad é a elexida polo CERN para o
-desenvolvemento e diseño de electrónica. É de esperar que con este
-respaldo a suite mellore ainda mais.
-
 # Qué imos facer? Qué se describe en este documento?
 
-Imos deseñar un shield para Arduino.
+Imos deseñar un shield para Arduino. Usando
+[KiCad](http://www.kicad-pcb.org/)
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non
 vamos a redactar un tutorial detallado nin de deseño de circuitos nin
@@ -28,6 +15,21 @@ super recomendable, elaborado por
 [TutoElectro](https://www.youtube.com/playlist?list=PL1Hs_F1k2mdRVYDtdWd7tQKDZTfxop7np)
 
 Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
+
+
+# Qué é KiCad?
+
+KiCad es una suite de diseño electrónico automatizado
+^[EDA suite en inglés]. KiCad permite o diseño tanto de esquemas de
+circuitos como das placas de circuito impreso a nivel profesional. Hai
+versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
+está dispoñible para Windows, Linux e Apple OS X. E un programa
+gratuito distribuido baixo licencia __GNU GPL v2__.
+
+Mellor ainda, a suite KiCad é a elexida polo CERN para o
+desenvolvemento e diseño de electrónica. É de esperar que con este
+respaldo a suite mellore ainda mais.
+
 
 # Instalación de KiCad (en Ubuntu)
 
@@ -60,7 +62,7 @@ Además de desenvolver o proxecto con KiCad queremos ter o proxecto
 dispoñible en github.
 
 Agora que temos KiCad instalado imos preparar un directorio de
-traballo ao que chamamos __sandboxShield__. 
+traballo ao que chamamos __sandboxShield__.
 
 O directorio __sandboxShield__ será o "repositorio" ou depósito do
 noso proxecto para git. Contén os seguintes subdirectorios:
@@ -85,7 +87,7 @@ Describir a configuración de git??
 
 As bibliotecas de KiCad están organizadas en duas partes:
 
-* Un fichero que contén os símbolos dos compoñentes para usarse no
+* Un ficheiro que contén os símbolos dos compoñentes para usarse no
   editor de esquemas electrónicos __Eescheme__
 
 * As pegadas dos compoñentes electrónicos, e decir a forma que ten que
@@ -119,7 +121,72 @@ facer a instalación: coma un submódulo git do noso proxecto.
 Describir as vantaxes de usar un git submodule
 ----
 
+## Engadir a biblioteca como un submódulo de git
 
+Dende o directorio principal de noso proxecto descarregamos a
+biblioteca de Freetronics coma un submodulo do noso proxecto:
+
+~~~{bash}
+git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary
+~~~
+
+Despois de engadir a biblioteca como un submódulo se consultamos o
+estado git do noso proxecto aparecerán dous novos ficheiros:
+
+~~~~{bash}
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitmodules
+	new file:   kicad/ftlibrary
+~~~~
+
+Git engadíu automáticamente os dous novos ficheiros, o directorio que
+contén a nosa biblioteca eo ficheiro __.gitmodule__ que levará o
+control de todolos submódulos que usemos.
+
+En realidade os ficheiros que compoñen a biblioteca non pertencen ao
+noso depósito de software, git só leva conta da versión da biblioteca
+de Freetronics que estamos a usar.
+
+## Configurar _Eescheme_ para usar a nova biblioteca
+
+No menú Preferences -> Component Library sinalamos na ventá inferior o
+directorio do noso proxecto. Na ventá superior engadimos o ficheiro da
+biblioteca.
+
+No github da biblioteca nos aconsellan poñer a biblioteca de primeira
+na nosa lista por que definen todo tipo de compoñentes.
+
+## Configurar acceso aos datos de pegadas (_footprints_) en pcbnew
+
+Configuramos un ficheiro para o noso proxecto declarando os
+_footprint_ extra que imos a utilizar.
+
+~~~~{cpp}
+(fp_lib_table
+  (lib
+   (name FT)
+   (type KiCad)
+   (uri ${KIPRJMOD}/ftlibrary/freetronics_footprints.pretty)
+   (options "")
+   (descr "Freetronics Kicad Library")
+   )
+)
+~~~~
+
+Engadimos o novo ficheiro ao noso repositorio
+
+~~~~{bash}
+git add fp-lib-table
+~~~~
+
+Abrimos _Pcbnew_ e no menú _Preferences->Footprint Libraries Manager_
+comprobamos que na pestaña _Project Specific Libraries_ figura o noso
+ficheiro.
 
 ## Outra biblioteca moi currada
 
@@ -149,22 +216,22 @@ diferentes
 na barra de iconos de ferramentas, no menú de KiCad no título da
 fiestra, ou có atallo __Ctrl+E__.
 
-Abrimos eescheme e creamos un novo fichero de esquema.
+Abrimos eescheme e creamos un novo ficheiro de esquema.
 
 
 
 # Requisitos
 
-1 x LDR
-3-4 x Botóns
-1 x RGB
-1 x LDR
-1 x Pines servo
-1 x sensor temp
-2 x potenciómetros
-1 x LED bermello
-1 x LED amarelo
-1 x LED verde
+* 1 x LDR
+* 3-4 x Botóns
+* 1 x RGB
+* 1 x LDR
+* 1 x Pines servo
+* 1 x sensor temp
+* 2 x potenciómetros
+* 1 x LED bermello
+* 1 x LED amarelo
+* 1 x LED verde
 
 
 # Meta
