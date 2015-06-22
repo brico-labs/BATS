@@ -39,12 +39,14 @@ Queremos facer un shield sinxelo para a enseñanza.
 * 1 x RGB
 * 1 x LDR
 * 1 x Pines servo
-* 1 x sensor temp
+* 1 x sensor temp (dudoso)
 * 2 x potenciómetros
-* 1 x LED bermello
+* 1 x LED vermello
 * 1 x LED amarelo
 * 1 x LED verde
 * 1 x Zoador
+* 1 x Botón de reset
+
 
 
 # Instalación de KiCad (en Ubuntu)
@@ -259,7 +261,7 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 * Crear o esquema do circuito (usando Eescheme)
 * Chequeo de erros (opción _Perform Electrical Rules Check_)
 * Xerar o ficheiro NET (opción _Generate netlist_)
-* Asignar as pegadas (_footprints_) aos compoñentes
+* Asignar as pegadas (_footprints_) aos compoñentes (opción _run CvPcb_)
 
 
 ### Tips
@@ -267,6 +269,8 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 * Falar dos flags
     * Power flags
     * Not used flag
+* Falar dos ficheiros de pegadas
+* Falar da asignación automática de pegadas
 
 
 

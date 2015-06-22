@@ -30,6 +30,7 @@ Queremos facer un shield sinxelo para a enseñanza.
 -   1 x LED amarelo
 -   1 x LED verde
 -   1 x Zoador
+-   1 x Botón de reset
 
 Instalación de KiCad (en Ubuntu)
 ================================
@@ -210,6 +211,7 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 -   Crear o esquema do circuito (usando Eescheme)
 -   Chequeo de erros (opción *Perform Electrical Rules Check*)
 -   Xerar o ficheiro NET (opción *Generate netlist*)
+-   Asignar as pegadas (*footprints*) aos compoñentes
 
 ### Tips
 
