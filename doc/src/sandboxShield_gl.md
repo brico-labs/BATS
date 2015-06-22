@@ -1,4 +1,4 @@
-% SandBoxShield con kicad
+% BATS: BricoLabs Arduino Training Shield (con kicad)
 % BricoLabs
 % 20 de xunio de 2015
 
@@ -14,7 +14,7 @@ con KiCad, se queredes un tutorial detallado, en youtube tedes un
 super recomendable, elaborado por
 [TutoElectro](https://www.youtube.com/playlist?list=PL1Hs_F1k2mdRVYDtdWd7tQKDZTfxop7np)
 
-Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
+Tamén comentaremos a nivel xeral os pasos para desenvolver este proxecto.
 
 
 # Qué é KiCad?
@@ -34,7 +34,6 @@ respaldo a suite mellore ainda mais.
 
 Queremos facer un shield sinxelo para a enseñanza.
 
-* 1 x LDR
 * 3-4 x Botóns
 * 1 x RGB
 * 1 x LDR
@@ -80,9 +79,9 @@ Además de desenvolver o proxecto con KiCad queremos ter o proxecto
 dispoñible en github.
 
 Agora que temos KiCad instalado imos preparar un directorio de
-traballo ao que chamamos __sandboxShield__.
+traballo ao que chamamos __bats__.
 
-O directorio __sandboxShield__ será o "repositorio" ou depósito do
+O directorio __bats__ será o "repositorio" ou depósito do
 noso proxecto para git. Contén os seguintes subdirectorios:
 
 doc
@@ -238,7 +237,7 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 ## Abrindo un proxecto
 
 Abrimos un novo proxecto: File::New Project (Ctrl+N)
-__sandbox_shield__
+__bats__
 
 ----
 
