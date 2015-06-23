@@ -84,13 +84,11 @@ O directorio **bats** será o "repositorio" ou depósito do noso proxecto
 para git. Contén os seguintes subdirectorios:
 
 doc
-
-: Contén a documentación do proxecto (o que estás a leer agora mesmo)
-redactada en [Pandoc](http://pandoc.org/)
+:   Contén a documentación do proxecto (o que estás a leer agora mesmo)
+    redactada en [Pandoc](http://pandoc.org/)
 
 kicad
-
-: Contén o proxecto KiCad
+:   Contén o proxecto KiCad
 
 Unha vez que temos preparado o directorio do proxecto activamos git para
 iniciar o control de versións.

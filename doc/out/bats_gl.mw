@@ -51,12 +51,9 @@ Agora que temos KiCad instalado imos preparar un directorio de traballo ao que c
 
 O directorio '''bats''' será o &quot;repositorio&quot; ou depósito do noso proxecto para git. Contén os seguintes subdirectorios:
 
-doc
-
+; doc
 : Contén a documentación do proxecto (o que estás a leer agora mesmo) redactada en [http://pandoc.org/ Pandoc]
-
-kicad
-
+; kicad
 : Contén o proxecto KiCad
 
 Unha vez que temos preparado o directorio do proxecto activamos git para iniciar o control de versións.
