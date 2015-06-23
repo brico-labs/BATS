@@ -11,7 +11,8 @@ KiCad, se queredes un tutorial detallado, en youtube tedes un super
 recomendable, elaborado por
 \href{https://www.youtube.com/playlist?list=PL1Hs_F1k2mdRVYDtdWd7tQKDZTfxop7np}{TutoElectro}
 
-Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
+Tamén comentaremos a nivel xeral os pasos para desenvolver este
+proxecto.
 
 \section{Qué é KiCad?}\label{quuxe9-uxe9-kicad}
 
@@ -33,8 +34,6 @@ Queremos facer un shield sinxelo para a enseñanza.
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  1 x LDR
-\item
   3-4 x Botóns
 \item
   1 x RGB
@@ -43,11 +42,11 @@ Queremos facer un shield sinxelo para a enseñanza.
 \item
   1 x Pines servo
 \item
-  1 x sensor temp
+  1 x sensor temp (dudoso)
 \item
   2 x potenciómetros
 \item
-  1 x LED bermello
+  1 x LED vermello
 \item
   1 x LED amarelo
 \item
@@ -91,10 +90,10 @@ Además de desenvolver o proxecto con KiCad queremos ter o proxecto
 dispoñible en github.
 
 Agora que temos KiCad instalado imos preparar un directorio de traballo
-ao que chamamos \textbf{sandboxShield}.
+ao que chamamos \textbf{bats}.
 
-O directorio \textbf{sandboxShield} será o ``repositorio'' ou depósito
-do noso proxecto para git. Contén os seguintes subdirectorios:
+O directorio \textbf{bats} será o ``repositorio'' ou depósito do noso
+proxecto para git. Contén os seguintes subdirectorios:
 
 doc
 
@@ -255,8 +254,7 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 \subsection{Abrindo un proxecto}\label{abrindo-un-proxecto}
 
-Abrimos un novo proxecto: File::New Project (Ctrl+N)
-\textbf{sandbox\_shield}
+Abrimos un novo proxecto: File::New Project (Ctrl+N) \textbf{bats}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -287,7 +285,8 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 \item
   Xerar o ficheiro NET (opción \emph{Generate netlist})
 \item
-  Asignar as pegadas (\emph{footprints}) aos compoñentes
+  Asignar as pegadas (\emph{footprints}) aos compoñentes (opción
+  \emph{run CvPcb})
 \end{itemize}
 
 \subsubsection{Tips}\label{tips}
@@ -304,6 +303,10 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
   \item
     Not used flag
   \end{itemize}
+\item
+  Falar dos ficheiros de pegadas
+\item
+  Falar da asignación automática de pegadas
 \end{itemize}
 
 \section{Meta}\label{meta}

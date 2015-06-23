@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export SRCFILE="sandboxShield"
+export SRCFILE="bats"
 export SRCDIR="src/"
 export OUTDIR="out/"
 

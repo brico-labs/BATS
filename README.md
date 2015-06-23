@@ -5,7 +5,7 @@ Imos deseñar un shield para Arduino. Usando [KiCad](http://www.kicad-pcb.org/)
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non vamos a redactar un tutorial detallado nin de deseño de circuitos nin do mesmo KiCad. Daremos as pistas xustiñas para empezar a traballar con KiCad, se queredes un tutorial detallado, en youtube tedes un super recomendable, elaborado por [TutoElectro](https://www.youtube.com/playlist?list=PL1Hs_F1k2mdRVYDtdWd7tQKDZTfxop7np)
 
-Tamén comentaremos de pasada como fumos desenvolvendo iste proxecto.
+Tamén comentaremos a nivel xeral os pasos para desenvolver este proxecto.
 
 Qué é KiCad?
 ============
@@ -19,14 +19,13 @@ Requisitos do shield
 
 Queremos facer un shield sinxelo para a enseñanza.
 
--   1 x LDR
 -   3-4 x Botóns
 -   1 x RGB
 -   1 x LDR
 -   1 x Pines servo
--   1 x sensor temp
+-   1 x sensor temp (dudoso)
 -   2 x potenciómetros
--   1 x LED bermello
+-   1 x LED vermello
 -   1 x LED amarelo
 -   1 x LED verde
 -   1 x Zoador
@@ -58,9 +57,9 @@ Configuración de directorios para este proxecto
 
 Además de desenvolver o proxecto con KiCad queremos ter o proxecto dispoñible en github.
 
-Agora que temos KiCad instalado imos preparar un directorio de traballo ao que chamamos **sandboxShield**.
+Agora que temos KiCad instalado imos preparar un directorio de traballo ao que chamamos **bats**.
 
-O directorio **sandboxShield** será o "repositorio" ou depósito do noso proxecto para git. Contén os seguintes subdirectorios:
+O directorio **bats** será o "repositorio" ou depósito do noso proxecto para git. Contén os seguintes subdirectorios:
 
 doc
 
@@ -191,7 +190,7 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 Abrindo un proxecto
 -------------------
 
-Abrimos un novo proxecto: File::New Project (Ctrl+N) **sandbox\_shield**
+Abrimos un novo proxecto: File::New Project (Ctrl+N) **bats**
 
 ------------------------------------------------------------------------
 
@@ -211,13 +210,15 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 -   Crear o esquema do circuito (usando Eescheme)
 -   Chequeo de erros (opción *Perform Electrical Rules Check*)
 -   Xerar o ficheiro NET (opción *Generate netlist*)
--   Asignar as pegadas (*footprints*) aos compoñentes
+-   Asignar as pegadas (*footprints*) aos compoñentes (opción *run CvPcb*)
 
 ### Tips
 
 -   Falar dos flags
     -   Power flags
     -   Not used flag
+-   Falar dos ficheiros de pegadas
+-   Falar da asignación automática de pegadas
 
 Meta
 ====
