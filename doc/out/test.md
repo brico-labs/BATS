@@ -1,3 +1,7 @@
+NOTA IMPORTANTE
+
+:   Lee a sección [META](#meta) para clonar este proxecto.
+
 Qué imos facer? Qué se describe en este documento?
 ==================================================
 
@@ -31,7 +35,26 @@ mellore ainda mais.
 Requisitos do shield
 ====================
 
-Queremos facer un shield sinxelo para a enseñanza.
+Queremos facer un shield que poida servir para iniciarse no mundo da
+programación con Arduino, especialmente centrado no ensino (tecnoloxía
+3º - 4º ESO). Neste eido, traballar sobre breadboard pode ser complexo,
+moitas veces o material é compartido e isto implica que, cada clase, hai
+que montar e desmontar o circuito que logo se programará. Isto leva o
+seu tempo e ocasiona erros de montaxe que son difíciles de detectar,
+polo que o uso dun shield parece que pode ser unha solución.
+
+Mália isto, empregando un shield xa ensamblada se perde a oportunidade
+de profundizar os coñecementos de electrónica e circuitos que se
+adquiren ao facer un mesmo a montaxe, así que un shield na que o
+alumno/a teña que colocar e soldar el mesmo os compoñentes, segundo
+avanza na súa aprendizaxe, parécenos a solución de compromiso idónea.
+
+Queremos que o shield sexa escalable, que sirva para traballar cuns
+poucos compoñentes se non se quere profundizar demasiado, pero que
+permita tamén chegar a nivéis máis avanzados e con máis compoñentes sen
+cambiar de shield.
+
+Estes son os compoñentes que se pensan incluír:
 
 -   3-4 x Botóns
 -   1 x RGB
@@ -210,23 +233,19 @@ Abrimos *Pcbnew* e no menú *Preferences-\>Footprint Libraries Manager*
 comprobamos que na pestaña *Project Specific Libraries* figura o noso
 ficheiro.
 
-Outra biblioteca moi currada
-----------------------------
-
-<git://smisioto.eu/KiCad_libs.git>
-
-Ainda mais bibliotecas
-----------------------
-
-<http://www.kicadlib.org/>
-
-Instalación das bibliotecas
----------------------------
-
-<http://www.arunet.co.uk/tkboyd/ele2pcbka.htm>
-
 Tutorial
 ========
+
+Checklist: Pasos a seguir para rematar o proxecto
+-------------------------------------------------
+
+-   Abrir o proxecto (e mellor tér un directorio dedicado ao proxecto
+    creado en adianto)
+-   Crear o esquema do circuito (usando Eescheme)
+-   Chequeo de erros (opción *Perform Electrical Rules Check*)
+-   Xerar o ficheiro NET (opción *Generate netlist*)
+-   Asignar as pegadas (*footprints*) aos compoñentes (opción *run
+    CvPcb* dende o *Eescheme*)
 
 A pantalla xeral
 ----------------
@@ -261,14 +280,6 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 ERC: comprobación dos erros no circuito
 ---------------------------------------
 
-### Checklist
-
--   Crear o esquema do circuito (usando Eescheme)
--   Chequeo de erros (opción *Perform Electrical Rules Check*)
--   Xerar o ficheiro NET (opción *Generate netlist*)
--   Asignar as pegadas (*footprints*) aos compoñentes (opción *run
-    CvPcb* dende o *Eescheme*)
-
 ### Tips
 
 -   Falar dos flags
@@ -277,8 +288,31 @@ ERC: comprobación dos erros no circuito
 -   Falar dos ficheiros de pegadas
 -   Falar da asignación automática de pegadas
 
-Meta
+Enlaces útiles
+==============
+
+[Conceptos de circuitos
+impresos](http://www.pcb.electrosoft.cl/04-articulos-circuitos-impresos-desarrollo-sistemas/01-conceptos-circuitos-impresos/conceptos-circuitos-impresos-pcb.html)
+[Instalación das
+bibliotecas](http://www.arunet.co.uk/tkboyd/ele2pcbka.htm) [Mais
+bibliotecas para KiCad](http://www.kicadlib.org/)
+
+Dende o seguinte enlace podese descarregar unha biblioteca de
+compoñentes moi currada:
+
+<git://smisioto.eu/KiCad_libs.git>
+
+META
 ====
+
+Este repositorio usa submódulos de git para a xestión das bibliotecas de
+compoñentes. Para clonar o repositorio tes que clonar o repositorio e
+despois actualizar os submódulos executando:
+
+``` {.{bash}}
+$ git clone https://github.com/brico-labs/BATS
+$ git submodule update --init
+```
 
 Este documento está escrito en
 [Markdown-Pandoc](http://pandoc.org/README.html). Pandoc e un sistema
@@ -290,7 +324,7 @@ saída son este fichero **README.md** en formato Markdown-github e os
 documentos que podes atopar no directorio **doc/out** incluindo un pdf.
 
 Os documentos xeneranse automáticamente a partir do ficheiro fonte sen
-mai que executar:
+mais que executar:
 
 ``` {.{bash}}
 $ cd doc
