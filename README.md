@@ -17,8 +17,13 @@ Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento e dese
 Requisitos do shield
 ====================
 
-Queremos facer un shield sinxelo para a enseñanza.
+Queremos facer un shield que poida servir para iniciarse no mundo da programación con Arduino, especialmente centrado no ensino (tecnoloxía 3º - 4º ESO). Neste eido, traballar sobre breadboard pode ser complexo, moitas veces o material é compartido e isto implica que, cada clase, hai que montar e desmontar o circuito que logo se programará. Isto leva o seu tempo e ocasiona erros de montaxe que son difíciles de detectar, polo que o uso dun shield parece que pode ser unha solución.
 
+Mália isto, empregando un shield xa ensamblada se perde a oportunidade de profundizar os coñecementos de electrónica e circuitos que se adquiren ao facer un mesmo a montaxe, así que un shield na que o alumno/a teña que colocar e soldar el mesmo os compoñentes, segundo avanza na súa aprendizaxe, parécenos a solución de compromiso idónea.
+
+Queremos que o shield sexa escalable, que sirva para traballar cuns poucos compoñentes se non se quere profundizar demasiado, pero que permita tamén chegar a nivéis máis avanzados e con máis compoñentes sen cambiar de shield.
+
+Estes son os compoñentes que se pensan incluír:
 -   3-4 x Botóns
 -   1 x RGB
 -   1 x LDR
