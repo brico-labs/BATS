@@ -258,13 +258,16 @@ título da fiestra, ou có atallo **Ctrl+E**.
 
 Abrimos eescheme e creamos un novo ficheiro de esquema.
 
+ERC: comprobación dos erros no circuito
+---------------------------------------
+
 ### Checklist
 
 -   Crear o esquema do circuito (usando Eescheme)
 -   Chequeo de erros (opción *Perform Electrical Rules Check*)
 -   Xerar o ficheiro NET (opción *Generate netlist*)
 -   Asignar as pegadas (*footprints*) aos compoñentes (opción *run
-    CvPcb*)
+    CvPcb* dende o *Eescheme*)
 
 ### Tips
 

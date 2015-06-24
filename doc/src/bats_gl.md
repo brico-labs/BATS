@@ -30,6 +30,8 @@ Mellor ainda, a suite KiCad é a elexida polo CERN para o
 desenvolvemento e deseño de electrónica. É de esperar que con este
 respaldo a suite mellore ainda mais.
 
+
+
 # Requisitos do shield
 
 Queremos facer un shield sinxelo para a enseñanza.
@@ -254,11 +256,15 @@ fiestra, ou có atallo __Ctrl+E__.
 
 Abrimos eescheme e creamos un novo ficheiro de esquema.
 
+## ERC: comprobación dos erros no circuito
+
+
+
 ### Checklist
 * Crear o esquema do circuito (usando Eescheme)
 * Chequeo de erros (opción _Perform Electrical Rules Check_)
 * Xerar o ficheiro NET (opción _Generate netlist_)
-* Asignar as pegadas (_footprints_) aos compoñentes (opción _run CvPcb_)
+* Asignar as pegadas (_footprints_) aos compoñentes (opción _run CvPcb_ dende o _Eescheme_)
 
 
 ### Tips

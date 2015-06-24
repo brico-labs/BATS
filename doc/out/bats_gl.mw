@@ -177,12 +177,14 @@ O primeiro que imos facer é o esquema do circuito. Para isto temos que usar a f
 
 Abrimos eescheme e creamos un novo ficheiro de esquema.
 
+== ERC: comprobación dos erros no circuito ==
+
 === Checklist ===
 
 * Crear o esquema do circuito (usando Eescheme)
 * Chequeo de erros (opción ''Perform Electrical Rules Check'')
 * Xerar o ficheiro NET (opción ''Generate netlist'')
-* Asignar as pegadas (''footprints'') aos compoñentes (opción ''run CvPcb'')
+* Asignar as pegadas (''footprints'') aos compoñentes (opción ''run CvPcb'' dende o ''Eescheme'')
 
 === Tips ===
 
