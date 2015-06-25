@@ -10,7 +10,7 @@ NOTA IMPORTANTE
 
 # Qué imos facer? Qué se describe en este documento?
 
-Imos deseñar un shield para Arduino. Usando
+Imos deseñar un shield para Arduino usando
 [KiCad](http://www.kicad-pcb.org/)
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non
@@ -28,8 +28,7 @@ proxecto.
 
 KiCad é unha suite de deseño electrónico automatizado
 ^[EDA suite en inglés]. KiCad permite o deseño tanto de esquemas de
-circuitos como das placas de circuito impreso a nivel profesional. Hai
-versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
+circuitos como das placas de circuito impreso a nivel profesional. A suite
 está dispoñible para Windows, Linux e Apple OS X. É un programa
 gratuito e __libre__ distribuido baixo licencia __GNU GPL v2__.
 
@@ -247,9 +246,11 @@ ficheiro.
   creado en adianto)
 * Crear o esquema do circuito (usando Eescheme)
 * Chequeo de erros (opción _Perform Electrical Rules Check_)
+* Asignar as pegadas (_footprints_) aos compoñentes (opción _run
+  CvPcb_ dende o _Eescheme_). As pegadas quedan asignadas a cada
+  compoñente no esquema.
 * Xerar o ficheiro NET (opción _Generate netlist_)
-* Asignar as pegadas (_footprints_) aos compoñentes (opción _run CvPcb_ dende o _Eescheme_)
-
+* Abrir o PcbNew e cargar o ficheiro NET xenerado dende o Eescheme
 
 
 ## A pantalla xeral
