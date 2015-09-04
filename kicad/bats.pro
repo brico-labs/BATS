@@ -1,4 +1,4 @@
-update=mié 24 jun 2015 21:05:52 CEST
+update=sáb 27 jun 2015 20:04:48 CEST
 version=1
 last_client=kicad
 [eeschema]
@@ -57,8 +57,6 @@ ModuleOutlineThickness=0.15
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -69,3 +67,5 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1
