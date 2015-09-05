@@ -1,4 +1,4 @@
-Info: Reading netlist file "/home/salvari/work/repos/bats/kicad/bats.net".
+Info: Reading netlist file "/home/salvari/work/repos/bats/kicad/bats_n.net".
 
 Info: Using references to match components and footprints.
 
@@ -26,9 +26,17 @@ Changing component "LED3:/55898085" pin "A" net name from "" to "Net-(LED3-PadA)
 
 Changing component "LED3:/55898085" pin "K" net name from "" to "Net-(LED3-PadK)".
 
-Info: Checking netlist component footprint "LED4:/558B07DB:FT:LED_CUBE_BASE_4PIN".
+Info: Checking netlist component footprint "LED4:/558B07DB:FT:LED-RGB-8MM-COM-K-MINIMAL".
 
-Adding new component "LED4:/558B07DB" footprint "FT:LED_CUBE_BASE_4PIN".
+Adding new component "LED4:/558B07DB" footprint "FT:LED-RGB-8MM-COM-K-MINIMAL".
+
+Changing component "LED4:/558B07DB" pin "AB" net name from "" to "Net-(LED4-PadAB)".
+
+Changing component "LED4:/558B07DB" pin "AR" net name from "" to "Net-(LED4-PadAR)".
+
+Changing component "LED4:/558B07DB" pin "K" net name from "" to "GND".
+
+Changing component "LED4:/558B07DB" pin "AG" net name from "" to "Net-(LED4-PadAG)".
 
 Info: Checking netlist component footprint "P1:/558B2883:FT:1X03".
 
@@ -39,46 +47,6 @@ Changing component "P1:/558B2883" pin "1" net name from "" to "Net-(P1-Pad1)".
 Changing component "P1:/558B2883" pin "2" net name from "" to "Net-(P1-Pad2)".
 
 Changing component "P1:/558B2883" pin "3" net name from "" to "GND".
-
-Info: Checking netlist component footprint "R1:/558B3DE4:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R1:/558B3DE4" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R1:/558B3DE4" pin "1" net name from "" to "Net-(P1-Pad1)".
-
-Changing component "R1:/558B3DE4" pin "2" net name from "" to "Net-(R1-Pad2)".
-
-Info: Checking netlist component footprint "R2:/558B3F17:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R2:/558B3F17" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R2:/558B3F17" pin "1" net name from "" to "Net-(R1-Pad2)".
-
-Changing component "R2:/558B3F17" pin "2" net name from "" to "Net-(R2-Pad2)".
-
-Info: Checking netlist component footprint "R3:/558B3FD2:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R3:/558B3FD2" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R3:/558B3FD2" pin "1" net name from "" to "Net-(R2-Pad2)".
-
-Changing component "R3:/558B3FD2" pin "2" net name from "" to "Net-(R3-Pad2)".
-
-Info: Checking netlist component footprint "R4:/558B4432:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R4:/558B4432" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R4:/558B4432" pin "1" net name from "" to "Net-(R3-Pad2)".
-
-Changing component "R4:/558B4432" pin "2" net name from "" to "Net-(R4-Pad2)".
-
-Info: Checking netlist component footprint "R5:/558B4438:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R5:/558B4438" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R5:/558B4438" pin "1" net name from "" to "Net-(R4-Pad2)".
-
-Changing component "R5:/558B4438" pin "2" net name from "" to "GND".
 
 Info: Checking netlist component footprint "R6:/558983C9:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
 
@@ -95,14 +63,6 @@ Adding new component "R7:/55898454" footprint "Resistors_ThroughHole:Resistor_Ho
 Changing component "R7:/55898454" pin "1" net name from "" to "Net-(R6-Pad2)".
 
 Changing component "R7:/55898454" pin "2" net name from "" to "GND".
-
-Info: Checking netlist component footprint "R8:/558B500C:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Adding new component "R8:/558B500C" footprint "Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
-
-Changing component "R8:/558B500C" pin "1" net name from "" to "Net-(R8-Pad1)".
-
-Changing component "R8:/558B500C" pin "2" net name from "" to "GND".
 
 Info: Checking netlist component footprint "R9:/558B13E2:Resistors_ThroughHole:Resistor_Horizontal_RM10mm".
 
@@ -192,7 +152,7 @@ Changing component "SHIELD1:/55897B99" pin "AD5" net name from "" to "Net-(SHIEL
 
 Changing component "SHIELD1:/55897B99" pin "AD4" net name from "" to "Net-(SHIELD1-PadAD4)".
 
-Changing component "SHIELD1:/55897B99" pin "AD3" net name from "" to "Net-(R8-Pad1)".
+Changing component "SHIELD1:/55897B99" pin "AD3" net name from "" to "Net-(SHIELD1-PadAD3)".
 
 Changing component "SHIELD1:/55897B99" pin "AD0" net name from "" to "Net-(R6-Pad2)".
 
@@ -264,54 +224,6 @@ Changing component "SHIELD1:/55897B99" pin "SP5" net name from "" to "Net-(SHIEL
 
 Changing component "SHIELD1:/55897B99" pin "SP6" net name from "" to "Net-(SHIELD1-PadSP6)".
 
-Info: Checking netlist component footprint "SW1:/558B39FE:FT:SW_PUSHBUTTON_PTH".
-
-Adding new component "SW1:/558B39FE" footprint "FT:SW_PUSHBUTTON_PTH".
-
-Changing component "SW1:/558B39FE" pin "1" net name from "" to "Net-(R1-Pad2)".
-
-Changing component "SW1:/558B39FE" pin "1" net name from "" to "Net-(R1-Pad2)".
-
-Changing component "SW1:/558B39FE" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Changing component "SW1:/558B39FE" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Info: Checking netlist component footprint "SW2:/558B3B1F:FT:SW_PUSHBUTTON_PTH".
-
-Adding new component "SW2:/558B3B1F" footprint "FT:SW_PUSHBUTTON_PTH".
-
-Changing component "SW2:/558B3B1F" pin "1" net name from "" to "Net-(R2-Pad2)".
-
-Changing component "SW2:/558B3B1F" pin "1" net name from "" to "Net-(R2-Pad2)".
-
-Changing component "SW2:/558B3B1F" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Changing component "SW2:/558B3B1F" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Info: Checking netlist component footprint "SW3:/558B3BA0:FT:SW_PUSHBUTTON_PTH".
-
-Adding new component "SW3:/558B3BA0" footprint "FT:SW_PUSHBUTTON_PTH".
-
-Changing component "SW3:/558B3BA0" pin "1" net name from "" to "Net-(R3-Pad2)".
-
-Changing component "SW3:/558B3BA0" pin "1" net name from "" to "Net-(R3-Pad2)".
-
-Changing component "SW3:/558B3BA0" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Changing component "SW3:/558B3BA0" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Info: Checking netlist component footprint "SW4:/558B3D86:FT:SW_PUSHBUTTON_PTH".
-
-Adding new component "SW4:/558B3D86" footprint "FT:SW_PUSHBUTTON_PTH".
-
-Changing component "SW4:/558B3D86" pin "1" net name from "" to "Net-(R4-Pad2)".
-
-Changing component "SW4:/558B3D86" pin "1" net name from "" to "Net-(R4-Pad2)".
-
-Changing component "SW4:/558B3D86" pin "2" net name from "" to "Net-(R8-Pad1)".
-
-Changing component "SW4:/558B3D86" pin "2" net name from "" to "Net-(R8-Pad1)".
-
 Info: Checking netlist component footprint "SW5:/558B73E7:FT:SW_PUSHBUTTON_PTH".
 
 Adding new component "SW5:/558B73E7" footprint "FT:SW_PUSHBUTTON_PTH".
@@ -360,47 +272,43 @@ Changing component "SW8:/558AEBB0" pin "2" net name from "" to "Net-(R17-Pad1)".
 
 Changing component "SW8:/558AEBB0" pin "2" net name from "" to "Net-(R17-Pad1)".
 
-Info: Checking netlist component footprint "SW9:/558AEBBD:Buttons_Switches_ThroughHole:SW_PUSH".
+Info: Checking netlist component footprint "SW9:/558AEBBD:FT:SW_PUSHBUTTON_PTH".
 
-Adding new component "SW9:/558AEBBD" footprint "Buttons_Switches_ThroughHole:SW_PUSH".
+Adding new component "SW9:/558AEBBD" footprint "FT:SW_PUSHBUTTON_PTH".
+
+Changing component "SW9:/558AEBBD" pin "1" net name from "" to "Net-(P1-Pad1)".
 
 Changing component "SW9:/558AEBBD" pin "1" net name from "" to "Net-(P1-Pad1)".
 
 Changing component "SW9:/558AEBBD" pin "2" net name from "" to "Net-(R18-Pad1)".
 
-Info: Checking netlist component footprint "U1:/5589860F:Buzzers_Beepers:MagneticBuzzer_StarMicronics_HMB-06_HMB-12".
+Changing component "SW9:/558AEBBD" pin "2" net name from "" to "Net-(R18-Pad1)".
 
-Adding new component "U1:/5589860F" footprint "Buzzers_Beepers:MagneticBuzzer_StarMicronics_HMB-06_HMB-12".
+Info: Checking netlist component footprint "U1:/5589860F:Buzzers_Beepers:MagneticBuzzer_Kingstate_KCG0601".
+
+Adding new component "U1:/5589860F" footprint "Buzzers_Beepers:MagneticBuzzer_Kingstate_KCG0601".
 
 Changing component "U1:/5589860F" pin "1" net name from "" to "GND".
 
 Changing component "U1:/5589860F" pin "2" net name from "" to "Net-(SHIELD1-Pad10)".
 
-Info: Checking netlist component footprint "VR1:/558B64D3:Potentiometers:Potentiometer_Alps-RK16-single".
+Info: Checking netlist component footprint "VR1:/55EA1F32:FT:POT_RV09_VERT".
 
-Adding new component "VR1:/558B64D3" footprint "Potentiometers:Potentiometer_Alps-RK16-single".
+Adding new component "VR1:/55EA1F32" footprint "FT:POT_RV09_VERT".
 
-Changing component "VR1:/558B64D3" pin "2" net name from "" to "GND".
+Changing component "VR1:/55EA1F32" pin "W" net name from "" to "Net-(SHIELD1-PadAD1)".
 
-Changing component "VR1:/558B64D3" pin "1" net name from "" to "Net-(P1-Pad1)".
+Changing component "VR1:/55EA1F32" pin "1" net name from "" to "Net-(P1-Pad1)".
 
-Info: Checking netlist component footprint "VR2:/558B673E:Potentiometers:Potentiometer_Alps-RK16-single".
+Changing component "VR1:/55EA1F32" pin "2" net name from "" to "GND".
 
-Adding new component "VR2:/558B673E" footprint "Potentiometers:Potentiometer_Alps-RK16-single".
+Info: Checking netlist component footprint "VR2:/55EA2018:FT:POT_RV09_VERT".
 
-Changing component "VR2:/558B673E" pin "2" net name from "" to "GND".
+Adding new component "VR2:/55EA2018" footprint "FT:POT_RV09_VERT".
 
-Changing component "VR2:/558B673E" pin "1" net name from "" to "Net-(P1-Pad1)".
+Changing component "VR2:/55EA2018" pin "W" net name from "" to "Net-(SHIELD1-PadAD2)".
 
-Error: Component 'LED4' pad 'AB' not found in footprint 'FT:LED_CUBE_BASE_4PIN'
+Changing component "VR2:/55EA2018" pin "1" net name from "" to "Net-(P1-Pad1)".
 
-Error: Component 'LED4' pad 'AG' not found in footprint 'FT:LED_CUBE_BASE_4PIN'
-
-Error: Component 'LED4' pad 'AR' not found in footprint 'FT:LED_CUBE_BASE_4PIN'
-
-Error: Component 'LED4' pad 'K' not found in footprint 'FT:LED_CUBE_BASE_4PIN'
-
-Error: Component 'VR1' pad 'W' not found in footprint 'Potentiometers:Potentiometer_Alps-RK16-single'
-
-Error: Component 'VR2' pad 'W' not found in footprint 'Potentiometers:Potentiometer_Alps-RK16-single'
+Changing component "VR2:/55EA2018" pin "2" net name from "" to "GND".
 

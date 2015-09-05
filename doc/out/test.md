@@ -5,7 +5,7 @@ NOTA IMPORTANTE
 Qué imos facer? Qué se describe en este documento?
 ==================================================
 
-Imos deseñar un shield para Arduino. Usando
+Imos deseñar un shield para Arduino usando
 [KiCad](http://www.kicad-pcb.org/)
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non
@@ -23,10 +23,9 @@ Qué é KiCad?
 
 KiCad é unha suite de deseño electrónico automatizado [^1]. KiCad
 permite o deseño tanto de esquemas de circuitos como das placas de
-circuito impreso a nivel profesional. Hai versións de KiCad dispoñibles
-para Windows, Linux, Apple OS X. A suite está dispoñible para Windows,
-Linux e Apple OS X. É un programa gratuito e **libre** distribuido baixo
-licencia **GNU GPL v2**.
+circuito impreso a nivel profesional. A suite está dispoñible para
+Windows, Linux e Apple OS X. É un programa gratuito e **libre**
+distribuido baixo licencia **GNU GPL v2**.
 
 Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento
 e deseño de electrónica. É de esperar que con este respaldo a suite
@@ -155,6 +154,12 @@ coma un submódulo git do noso proxecto.
 
 ------------------------------------------------------------------------
 
+A vantaxe de engadir a biblioteca de compoñentes de Freetronics coma un
+submódulo é que o noso proxecto queda aillado do proxecto engadido como
+submódulo. Podemos avanzar no noso proxecto e engadir os avances que
+haxa no proxecto submódulo de xeito controlado xa que os podemos
+actualizar de xeito independiente.
+
 Describir as vantaxes de usar un git submodule
 
 ------------------------------------------------------------------------
@@ -243,9 +248,11 @@ Checklist: Pasos a seguir para rematar o proxecto
     creado en adianto)
 -   Crear o esquema do circuito (usando Eescheme)
 -   Chequeo de erros (opción *Perform Electrical Rules Check*)
--   Xerar o ficheiro NET (opción *Generate netlist*)
 -   Asignar as pegadas (*footprints*) aos compoñentes (opción *run
-    CvPcb* dende o *Eescheme*)
+    CvPcb* dende o *Eescheme*). As pegadas quedan asignadas a cada
+    compoñente no esquema.
+-   Xerar o ficheiro NET (opción *Generate netlist*)
+-   Abrir o PcbNew e cargar o ficheiro NET xenerado dende o Eescheme
 
 A pantalla xeral
 ----------------

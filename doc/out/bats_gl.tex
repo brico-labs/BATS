@@ -6,7 +6,7 @@ Lee a sección \hyperref[meta]{META} para clonar este proxecto.
 \section{Qué imos facer? Qué se describe en este
 documento?}\label{quuxe9-imos-facer-quuxe9-se-describe-en-este-documento}
 
-Imos deseñar un shield para Arduino. Usando
+Imos deseñar un shield para Arduino usando
 \href{http://www.kicad-pcb.org/}{KiCad}
 
 Daremos unha visión xeral da funcionalidade da suite KiCad pero non
@@ -23,10 +23,10 @@ proxecto.
 
 KiCad é unha suite de deseño electrónico automatizado \footnote{EDA
   suite en inglés}. KiCad permite o deseño tanto de esquemas de
-circuitos como das placas de circuito impreso a nivel profesional. Hai
-versións de KiCad dispoñibles para Windows, Linux, Apple OS X. A suite
-está dispoñible para Windows, Linux e Apple OS X. É un programa gratuito
-e \textbf{libre} distribuido baixo licencia \textbf{GNU GPL v2}.
+circuitos como das placas de circuito impreso a nivel profesional. A
+suite está dispoñible para Windows, Linux e Apple OS X. É un programa
+gratuito e \textbf{libre} distribuido baixo licencia \textbf{GNU GPL
+v2}.
 
 Mellor ainda, a suite KiCad é a elexida polo CERN para o desenvolvemento
 e deseño de electrónica. É de esperar que con este respaldo a suite
@@ -173,6 +173,12 @@ instalación: coma un submódulo git do noso proxecto.
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
+A vantaxe de engadir a biblioteca de compoñentes de Freetronics coma un
+submódulo é que o noso proxecto queda aillado do proxecto engadido como
+submódulo. Podemos avanzar no noso proxecto e engadir os avances que
+haxa no proxecto submódulo de xeito controlado xa que os podemos
+actualizar de xeito independiente.
+
 Describir as vantaxes de usar un git submodule
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -267,10 +273,13 @@ proxecto}\label{checklist-pasos-a-seguir-para-rematar-o-proxecto}
 \item
   Chequeo de erros (opción \emph{Perform Electrical Rules Check})
 \item
+  Asignar as pegadas (\emph{footprints}) aos compoñentes (opción
+  \emph{run CvPcb} dende o \emph{Eescheme}). As pegadas quedan asignadas
+  a cada compoñente no esquema.
+\item
   Xerar o ficheiro NET (opción \emph{Generate netlist})
 \item
-  Asignar as pegadas (\emph{footprints}) aos compoñentes (opción
-  \emph{run CvPcb} dende o \emph{Eescheme})
+  Abrir o PcbNew e cargar o ficheiro NET xenerado dende o Eescheme
 \end{itemize}
 
 \subsection{A pantalla xeral}\label{a-pantalla-xeral}

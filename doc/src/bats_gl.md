@@ -163,6 +163,12 @@ instalación: coma un submódulo git do noso proxecto.
 
 ----
 
+A vantaxe de engadir a biblioteca de compoñentes de Freetronics coma
+un submódulo é que o noso proxecto queda aillado do proxecto engadido
+como submódulo. Podemos avanzar no noso proxecto e engadir os avances
+que haxa no proxecto submódulo de xeito controlado xa que os podemos
+actualizar de xeito independiente.
+
 Describir as vantaxes de usar un git submodule
 
 ----
