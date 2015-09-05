@@ -161,17 +161,22 @@ facendo un control de versións do noso proxecto con git a propia
 páxina da biblioteca suxírenos o xeito mais adoitado de facer a
 instalación: coma un submódulo git do noso proxecto.
 
-----
-
 A vantaxe de engadir a biblioteca de compoñentes de Freetronics coma
-un submódulo é que o noso proxecto queda aillado do proxecto engadido
-como submódulo. Podemos avanzar no noso proxecto e engadir os avances
-que haxa no proxecto submódulo de xeito controlado xa que os podemos
-actualizar de xeito independiente.
+un submódulo Git é que o noso proxecto queda "aillado" do proxecto
+engadido como submódulo. Podemos avanzar no noso proxecto e salvar os
+cambios feitos con Git, sen afectar aos submódulos, e viceversa.
 
-Describir as vantaxes de usar un git submodule
+Por exemplo, unha vez que teñamos o noso directorio de traballo configurado
+con git, e a libreria de Freetronics engadida como submodulo, poderíamos
+empezar o desenrolo da nosa placa BATS e ir gardando os nosos
+avances. Estas operacións non afectarán a librería Freetronics, que de
+feito ainda que esta descarregada no noso directorio de traballo, non
+está gardada no git do noso proxecto, soamente está enlazada.
 
-----
+Se no futuro nos interesa actualizarnos a unha versión mais avanzada
+da librería Freetronics, podemos facer un commit do noso proxecto
+nunha situación controlada, e despois actualizar o submodulo
+correspondiente a librería.
 
 ## Engadir a biblioteca como un submódulo de git
 
@@ -257,6 +262,8 @@ ficheiro.
   compoñente no esquema.
 * Xerar o ficheiro NET (opción _Generate netlist_)
 * Abrir o PcbNew e cargar o ficheiro NET xenerado dende o Eescheme
+* Distribuir os compoñentes do noso proxecto intentado simplificar a
+  topoloxía das pistas o que poidamos.
 
 
 ## A pantalla xeral
