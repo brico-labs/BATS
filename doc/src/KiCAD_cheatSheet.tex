@@ -1,0 +1,208 @@
+%%
+%% This is file `tikzposter-template.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% tikzposter.dtx  (with options: `tikzposter-template.tex')
+%%
+%% This is a generated file.
+%%
+%% Copyright (C) 2014 by Pascal Richter, Elena Botoeva, Richard Barnard, and Dirk Surmann
+%%
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 2.0 of this license or (at your option) any later
+%% version. The latest version of this license is in:
+%%
+%% http://www.latex-project.org/lppl.txt
+%%
+%% and version 2.0 or later is part of all distributions of
+%% LaTeX version 2013/12/01 or later.
+%%
+
+\documentclass[20pt]{tikzposter} %Options for format can be included here
+
+\usepackage{bookman}
+
+% Esto es para poder escribir acentos directamente:
+\usepackage[utf8]{inputenc}
+% Esto es para que el LaTeX sepa que el texto está en español:
+\usepackage[spanish]{babel}
+
+
+ % Title, Author, Institute
+\title{KiCAD Cheat Sheet}
+\author{salvari}
+\institute{BricoLabs}
+\titlegraphic{LogoGraphic Inserted Here}
+
+
+ %Choose Layout
+\usetheme{Default}
+
+\begin{document}
+
+ % Title block with title, author, logo, etc.
+\maketitle
+\block{KiCAD}{
+
+  KiCad é unha suite de deseño electrónico automatizado (EDA Suite en
+  inglés). KiCad permite o deseño tanto de esquemas de circuitos como
+  das placas de circuito impreso a nivel profesional. A suite está
+  dispoñible para Windows, Linux e Apple OS X. É un programa gratuito
+  e libre distribuido baixo licencia GNU GPL v2.
+
+  Mellor ainda, a suite KiCad é a elexida polo CERN para o
+  desenvolvemento e deseño de electrónica. É de esperar que con este
+  respaldo a suite mellore ainda mais.
+\\
+\innerblock{Compoñentes da suite KiCAD}{
+  \begin{description}
+  \item[Eescheme] O editor dos esquemas eléctricos
+  \item[Pcbnew] O editor das placas de circuito impreso (PCB en inglés)
+  \item[Schematic Library Editor] O editor dos compoñentes esquemáticos
+  \item[PCB footprint editor] O editor de ``pegadas'' dos compoñentes
+  \item[GerbView] Un visor de ficheiros Gerb
+  \item[Bitmap2Component] Conversor de bitmaps a compoñentes de
+    Eescheme ou de Pcbnew
+  \item[Pcb calculator] Unha calculadora de circuitos impresos con
+    distintas utilidades
+  \item[Pl editor] Un editor de plantillas para as follas de circuitos
+    impresos ou de circuitos impresos
+  \end{description}
+}
+
+}
+ \begin{columns}
+
+ % FIRST column
+\column{0.5}% Width set relative to text width
+
+\block{Eescheme}{
+  \begin{tabular}{l|l|c}
+    Axuda & Help & ?\\
+    Aumentar zoom & Zoom In & F1\\
+    Disminuir zoom & Zoom Out & F2\\
+    Redibuxar zoom & Zoom Redraw & F3\\
+    Centrar zoom & Zoom Center & F4\\
+    Encaixar na pantalla & Fit on Screen & Home\\
+    Borrar item & Delete Item & Del\\
+    Repetir derradeiro item & Repeat Lest Item & Ins\\
+    Mover ou arrastrar bloque & Move Block -> Drag Block & Tab\\
+    Mover item & Move Item & M\\
+    Copiar compoñente ou etiqueta & Copy Component or Label & C\\
+    Arrastrar item & Drag Item & G\\
+    Engadir compoñente & Add Component & A\\
+    Engadir Alimentación & Add Power & P\\
+    Xirar item & Rotate Item & R\\
+    Invertir compoñente no eixo X & Mirror X Component & X\\
+    Invertir compoñente no eixo Y & Mirror Y Component & Y\\
+    Orientación por defecto de compoñente & Orient Normal Component & N\\
+    Editar item & Edit Item & E\\
+    Editar valor & Edit Value & V\\
+    Editar referencia & Edit Reference & U\\
+    Editar pegada & Edit Footprint & F\\
+    Comenzar cableado & Begin Wire & W\\
+    Comenzar Bus & Begin Bus & B\\
+    Finalizar cableado ou bus & End Line Wire Bus & K\\
+    Engadir etiqueta & Add Label & L\\
+    Engadir etiqueta xerarquica & Add Hierarchical Label & H\\
+    Engadir conexión de cables & Add Junction & J\\
+    Engadir marca de no conexión & Add No Connect Flag & Q\\
+    Engadir folla & Add Sheet & S\\
+    Engadir conexión & Add Wire Entry & Z\\
+    Engadir entrada de bus & Add Bus Entry & /\\
+  \end{tabular}
+}
+% \note{Note with default behavior}
+% \note[targetoffsetx=12cm, targetoffsety=-1cm, angle=20, rotate=25]
+% {Note \\ offset and rotated}
+
+ % First column - second block
+\block{Fluxo de traballo}{
+  \begin{list}{}{}
+  \item 
+  \end{list}
+}
+
+ % First column - third block
+\block{Sample Block 4}{T\\E\\S\\T}
+
+ % SECOND column
+\column{0.5}
+ %Second column with first block's top edge aligned with with previous column's top.
+
+ % Second column - first block
+\block{Pcbnew}{
+  \begin{tabular}{l|l|c}
+    Cambiar unidades & Switch Units & CTRL+U\\
+    Resetear coordinadas locales & Reset Local Coordinates & Space\\
+    Desfacer & Undo & Ctrl+Z\\
+    Volver a facer & Redo & CTRL-Y\\
+    Modo seguimento & Track Display Mode & K\\
+    Borrar & Delete & Del\\
+    Borrar segmento & Delete Track Segment & BkSp\\
+    Engadir nova pista & Add New Track X\\
+    Engadir via & Add Via & V\\
+    Engadir microvia & Add Microvia & CTRL+V\\
+    Cambiar posición da pista & Switch Track Posture & /\\
+    Arrastrar pista manter pend & Drag Track, Keep Slope &  D\\
+    Colocar compoñente & Place Item & P\\
+    Copiar item & Copy Item & C\\
+    Finalizar pista & End Track & End\\
+    Move item & Move Item & M\\
+    Invertir item & Flip Item & F\\
+    Rotar item & Rotate Item & R\\
+    Arrastrar item & Drag Item & G\\
+    Buscar compoñente & Get and Move Footprint & T\\
+    Bloquear pegada & Lock/Unlock Footprint & L\\
+    Salvar tarxeta & Save Board & Ctrl+S\\
+    Cargar tarxeta & Load Board & Ctrl+L\\
+    Atopar item & Find Item & Ctrl+F\\
+    Editar item & Edit Item & End\\
+    Ir á capa de cobre & Switch to Cooper Layer & PgDn\\
+    Ir á capa interna 1 & Switch to Inner Layer 1 & F5\\
+    Ir á capa interna 2 & Switch to Inner Layer 2 & F6\\
+    Ir á capa de compoñentes & Switch to Component Layer & PgUp\\
+    Ir á siguiente capa & Switch to Next Layer & +\\
+    Ir á capa previa & Switch to Previous Layer & -\\
+    Engadir módulo & Add Module & O\\
+    Camb. á anch. de pista sig. & Switch Track Width to Next & W\\
+    Camb. á anch. de pista prev & Switch Track Width to Previous & Ctrl+W\\
+    Modo de alto contraste & Switch Highcontrast Mode & H\\
+    Invertir bloque (espello) & Invert (mirror) Block & Shift-LeftMouseB\\
+  \end{tabular}
+}
+
+ % Second column - second block
+\block[titlewidthscale=0.6, bodywidthscale=0.8]
+{Variable width title}{Block with smaller width.}
+
+ % Second column - third block
+\block{}{Block with no title}
+
+ % Second column - A collection of blocks in subcolumn environment.
+\begin{subcolumns}
+    \subcolumn{0.27} \block{1}{First block.} \block{2}{Second block}
+    \subcolumn{0.4} \block{Sub-columns}{Sample subblocks\\Second subcolumn}
+    \subcolumn{0.33} \block{4}{Fourth} \block{}{Final Subcolumn block}
+\end{subcolumns}
+
+ % Bottomblock
+\block{Final Block in column}{
+    Sample block.
+}
+\end{columns}
+% \block[titleleft, titleoffsetx=2em, titleoffsety=1em, bodyoffsetx=2em,%
+%  bodyoffsety=-2cm, roundedcorners=10, linewidth=0mm, titlewidthscale=0.7,%
+%  bodywidthscale=0.9, bodyverticalshift=2cm, titleright]
+% {Block outside of Columns}{Along with several options enabled}
+
+\end{document}
+
+
+
+\endinput
+%%
+%% End of file `tikzposter-template.tex'.
