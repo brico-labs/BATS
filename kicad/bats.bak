@@ -707,12 +707,12 @@ Connection ~ 9600 4800
 Wire Wire Line
 	9600 4800 8200 4800
 Text Label 8200 4800 2    60   ~ 0
-ARD2
+ARD3
 Connection ~ 9300 4850
 Wire Wire Line
 	9300 4850 7950 4850
 Text Label 7950 4850 2    60   ~ 0
-ARD3
+ARD2
 $Comp
 L SW_PUSHBUTTON SW3
 U 1 1 5589867E
