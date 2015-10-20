@@ -724,4 +724,6 @@ F 3 "" H 9600 4300 60  0000 C CNN
 	1    9600 4300
 	0    1    1    0   
 $EndComp
+Text Label 4850 3850 2    60   ~ 0
+VCC
 $EndSCHEMATC
