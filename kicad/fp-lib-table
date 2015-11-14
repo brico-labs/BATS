@@ -1,9 +1,4 @@
 (fp_lib_table
-  (lib
-   (name FT)
-   (type KiCad)
-   (uri ${KIPRJMOD}/ftlibrary/freetronics_footprints.pretty)
-   (options "")
-   (descr "Freetronics Kicad Library")
-   )
+  (lib (name FT)(type KiCad)(uri ${KIPRJMOD}/ftlibrary/freetronics_footprints.pretty)(options "")(descr "Freetronics Kicad Library"))
+  (lib (name silklibrary)(type KiCad)(uri "$(KIPRJMOD)/silklibrary.pretty")(options "")(descr ""))
 )
