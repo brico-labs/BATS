@@ -312,6 +312,7 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
 # As bibliotecas en KiCAD
 
 Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns para isto:
+
 * As bibliotecas de KiCAD manteñen separados os símbolos dos
   compoñentes para usar no esquema do circuito das pegadas
   (*footprints*) dos mesmos que son os que se usan no deseño da placa.
@@ -335,12 +336,12 @@ KiCAD. Nos usamos *~/resources/kicad*
 
 # Enlaces útiles
 
-[Conceptos de circuitos impresos](http://www.pcb.electrosoft.cl/04-articulos-circuitos-impresos-desarrollo-sistemas/01-conceptos-circuitos-impresos/conceptos-circuitos-impresos-pcb.html)
-[Instalación das bibliotecas](http://www.arunet.co.uk/tkboyd/ele2pcbka.htm)
-[Mais bibliotecas para KiCad](http://www.kicadlib.org/)
+* [Conceptos de circuitos impresos](http://www.pcb.electrosoft.cl/04-articulos-circuitos-impresos-desarrollo-sistemas/01-conceptos-circuitos-impresos/conceptos-circuitos-impresos-pcb.html)
+* [Instalación das bibliotecas](http://www.arunet.co.uk/tkboyd/ele2pcbka.htm)
+* [Mais bibliotecas para KiCad](http://www.kicadlib.org/)
 
 Dende o seguinte enlace podese descarregar unha biblioteca de
-compoñentes moi currada:
+compoñentes moi currada, ainda que algo anticuada:
 
 <git://smisioto.eu/KiCad_libs.git>
 
