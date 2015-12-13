@@ -214,8 +214,8 @@ Se queres saber mais de esta potente funcionalidade de git podes leer:
 
 ## Configurar _Eescheme_ para usar a nova biblioteca
 
-No menú Preferences -> Component Library sinalamos na ventá inferior o
-directorio do noso proxecto. Na ventá superior engadimos o ficheiro da
+No menú Preferences -> Component Library sinalamos na fiestra inferior o
+directorio do noso proxecto. Na fiestra superior engadimos o ficheiro da
 biblioteca.
 
 No github da biblioteca nos aconsellan poñer a biblioteca de primeira
@@ -308,6 +308,29 @@ Abrimos eescheme e creamos un novo ficheiro de esquema.
     * Not used flag
 * Falar dos ficheiros de pegadas
 * Falar da asignación automática de pegadas
+
+# As bibliotecas en KiCAD
+
+Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns para isto:
+* As bibliotecas de KiCAD manteñen separados os símbolos dos
+  compoñentes para usar no esquema do circuito das pegadas
+  (*footprints*) dos mesmos que son os que se usan no deseño da placa.
+* Os símbolos dos compoñentes están almacenados en ficheiros con
+  extensión *.lib* de ahí que con frecuencia se lles chame *library*
+  (traducido librerias) na xerga de KiCAD
+* Por contra as pegadas dos compoñentes almacénanse en ficheiros con
+  extensión *.mod* ou as mais modernas *.kicad_mod* de ahí que a miudo
+  se lles chame *modules* (traducido módulos) na xerga de KiCAD
+* Os menús e diálogos para engadir ficheiros *.lib* e os ficheiros
+  *.mod* son completamente diferentes
+* KiCAD soporta multiples localizacións para as bibliotecas, mesmo
+  localizacións en github.
+
+Dende o noso punto de vista o mais sinxelo e ter un só directorio
+donde almacenemos as bibliotecas de terceiros que queremos usar con
+KiCAD. Nos usamos *~/resources/kicad*
+
+
 
 
 # Enlaces útiles

@@ -152,17 +152,23 @@ facendo un control de versións do noso proxecto con git a propia páxina
 da biblioteca suxírenos o xeito mais adoitado de facer a instalación:
 coma un submódulo git do noso proxecto.
 
-------------------------------------------------------------------------
-
 A vantaxe de engadir a biblioteca de compoñentes de Freetronics coma un
-submódulo é que o noso proxecto queda aillado do proxecto engadido como
-submódulo. Podemos avanzar no noso proxecto e engadir os avances que
-haxa no proxecto submódulo de xeito controlado xa que os podemos
-actualizar de xeito independiente.
+submódulo Git é que o noso proxecto queda "aillado" do proxecto engadido
+como submódulo. Podemos avanzar no noso proxecto e salvar os cambios
+feitos con Git, sen afectar aos submódulos, e viceversa.
 
-Describir as vantaxes de usar un git submodule
+Por exemplo, unha vez que teñamos o noso directorio de traballo
+configurado con git, e a libreria de Freetronics engadida como
+submodulo, poderíamos empezar o desenrolo da nosa placa BATS e ir
+gardando os nosos avances. Estas operacións non afectarán a librería
+Freetronics, que de feito ainda que esta descarregada no noso directorio
+de traballo, non está gardada no git do noso proxecto, soamente está
+enlazada.
 
-------------------------------------------------------------------------
+Se no futuro nos interesa actualizarnos a unha versión mais avanzada da
+librería Freetronics, podemos facer un commit do noso proxecto nunha
+situación controlada, e despois actualizar o submodulo correspondiente a
+librería.
 
 Engadir a biblioteca como un submódulo de git
 ---------------------------------------------
@@ -202,9 +208,9 @@ Se queres saber mais de esta potente funcionalidade de git podes leer:
 Configurar *Eescheme* para usar a nova biblioteca
 -------------------------------------------------
 
-No menú Preferences -\> Component Library sinalamos na ventá inferior o
-directorio do noso proxecto. Na ventá superior engadimos o ficheiro da
-biblioteca.
+No menú Preferences -\> Component Library sinalamos na fiestra inferior
+o directorio do noso proxecto. Na fiestra superior engadimos o ficheiro
+da biblioteca.
 
 No github da biblioteca nos aconsellan poñer a biblioteca de primeira na
 nosa lista por que definen todo tipo de compoñentes. Nos de momento
@@ -253,6 +259,8 @@ Checklist: Pasos a seguir para rematar o proxecto
     compoñente no esquema.
 -   Xerar o ficheiro NET (opción *Generate netlist*)
 -   Abrir o PcbNew e cargar o ficheiro NET xenerado dende o Eescheme
+-   Distribuir os compoñentes do noso proxecto intentado simplificar a
+    topoloxía das pistas o que poidamos.
 
 A pantalla xeral
 ----------------
@@ -294,6 +302,26 @@ ERC: comprobación dos erros no circuito
     -   Not used flag
 -   Falar dos ficheiros de pegadas
 -   Falar da asignación automática de pegadas
+
+As bibliotecas en KiCAD
+=======================
+
+Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns
+para isto: \* As bibliotecas de KiCAD manteñen separados os símbolos dos
+compoñentes para usar no esquema do circuito das pegadas (*footprints*)
+dos mesmos que son os que se usan no deseño da placa. \* Os símbolos dos
+compoñentes están almacenados en ficheiros con extensión *.lib* de ahí
+que con frecuencia se lles chame *library* (traducido librerias) na
+xerga de KiCAD \* Por contra as pegadas dos compoñentes almacénanse en
+ficheiros con extensión *.mod* ou as mais modernas *.kicad\_mod* de ahí
+que a miudo se lles chame *modules* (traducido módulos) na xerga de
+KiCAD \* Os menús e diálogos para engadir ficheiros *.lib* e os
+ficheiros *.mod* son completamente diferentes \* KiCAD soporta multiples
+localizacións para as bibliotecas, mesmo localizacións en github.
+
+Dende o noso punto de vista o mais sinxelo e ter un só directorio donde
+almacenemos as bibliotecas de terceiros que queremos usar con KiCAD. Nos
+usamos *\~/resources/kicad*
 
 Enlaces útiles
 ==============
