@@ -230,7 +230,27 @@ Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns para ist
 -   Os menús e diálogos para engadir ficheiros *.lib* e os ficheiros *.mod* son completamente diferentes
 -   KiCAD soporta multiples localizacións para as bibliotecas, mesmo localizacións en github.
 
-Dende o noso punto de vista o mais sinxelo e ter un só directorio donde almacenemos as bibliotecas de terceiros que queremos usar con KiCAD. Nos usamos *~/resources/kicad*
+Dende o noso punto de vista o mais sinxelo e ter un só directorio donde almacenemos as bibliotecas de terceiros que queremos usar con KiCAD. Nos usamos **~/resources/kicad** de feito temos:
+
+~/resources/kicad/my\_kicad\_lib  
+Para os compoñentes de diseño propio
+
+~/resources/kicad/my\_kicad.pretty  
+para os footprints de diseño propio
+
+~/resources/kicad/kicad\_3rd  
+para librerias de terceiros
+
+Un exemplo: Engadir novas bibliotecas Arduino
+---------------------------------------------
+
+Imos ver como engadir unha nova biblioteca de compoñentes de xeito global (quedará dispoñible para todos os proxectos) ou só para un proxecto concreto.
+
+As bibliotecas que imos usar pódense atopar en esta [páxina](http://meta-blog.eklablog.com/kicad-librairie-arduino-pretty-p930786).
+
+Na páxina hai dous ficheiros dispoñibles para descarga. O que contén as plantillas (*templates*) non o queremos, xa está incluido no github de KiCAD.
+
+Descarregamos o outro e descomprimimos no directorio donde imos ter as bibliotecas de KiCAD, no noso caso: **~/resources/kicad/kicad\_3rd**
 
 Enlaces útiles
 ==============
@@ -239,7 +259,7 @@ Enlaces útiles
 -   [Instalación das bibliotecas](http://www.arunet.co.uk/tkboyd/ele2pcbka.htm)
 -   [Mais bibliotecas para KiCad](http://www.kicadlib.org/)
 
-Dende o seguinte enlace podese descarregar unha biblioteca de compoñentes moi currada:
+Dende o seguinte enlace podese descarregar unha biblioteca de compoñentes moi currada, ainda que algo anticuada:
 
 <git://smisioto.eu/KiCad_libs.git>
 

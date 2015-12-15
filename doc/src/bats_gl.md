@@ -276,14 +276,16 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 ## Abrindo un proxecto
 
+### Checklist
+
+* Usar un directorio adicado ao proxecto
+* Engadir a información do proxecto ao esquema.
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N)
 __bats__
 
-----
+###
 
-falar das propiedades do documento
-
-----
 
 ## Crear e Editar o esquema do circuito
 
@@ -329,7 +331,37 @@ Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns para ist
 
 Dende o noso punto de vista o mais sinxelo e ter un só directorio
 donde almacenemos as bibliotecas de terceiros que queremos usar con
-KiCAD. Nos usamos *~/resources/kicad*
+KiCAD. Nos usamos **~/resources/kicad** de feito temos:
+
+~/resources/kicad/my_kicad_lib
+
+  ~ Para os compoñentes de diseño propio
+
+~/resources/kicad/my_kicad.pretty
+
+  ~ para os footprints de diseño propio
+
+~/resources/kicad/kicad_3rd
+
+  ~ para librerias de terceiros
+
+## Un exemplo: Engadir novas bibliotecas Arduino
+
+Imos ver como engadir unha nova biblioteca de compoñentes de xeito
+global (quedará dispoñible para todos os proxectos) ou só para un
+proxecto concreto.
+
+As bibliotecas que imos usar pódense atopar en esta
+[páxina](http://meta-blog.eklablog.com/kicad-librairie-arduino-pretty-p930786).
+
+Na páxina hai dous ficheiros dispoñibles para descarga. O que contén
+as plantillas (*templates*) non o queremos, xa está incluido no github
+de KiCAD.
+
+Descarregamos o outro e descomprimimos no directorio donde imos ter as
+bibliotecas de KiCAD, no noso caso: **~/resources/kicad/kicad_3rd**
+
+
 
 
 

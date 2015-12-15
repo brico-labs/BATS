@@ -374,7 +374,34 @@ para isto:
 
 Dende o noso punto de vista o mais sinxelo e ter un só directorio donde
 almacenemos as bibliotecas de terceiros que queremos usar con KiCAD. Nos
-usamos \emph{\textasciitilde{}/resources/kicad}
+usamos \textbf{\textasciitilde{}/resources/kicad} de feito temos:
+
+\begin{description}
+\item[\textasciitilde{}/resources/kicad/my\_kicad\_lib]
+Para os compoñentes de diseño propio
+\item[\textasciitilde{}/resources/kicad/my\_kicad.pretty]
+para os footprints de diseño propio
+\item[\textasciitilde{}/resources/kicad/kicad\_3rd]
+para librerias de terceiros
+\end{description}
+
+\subsection{Un exemplo: Engadir novas bibliotecas
+Arduino}\label{un-exemplo-engadir-novas-bibliotecas-arduino}
+
+Imos ver como engadir unha nova biblioteca de compoñentes de xeito
+global (quedará dispoñible para todos os proxectos) ou só para un
+proxecto concreto.
+
+As bibliotecas que imos usar pódense atopar en esta
+\href{http://meta-blog.eklablog.com/kicad-librairie-arduino-pretty-p930786}{páxina}.
+
+Na páxina hai dous ficheiros dispoñibles para descarga. O que contén as
+plantillas (\emph{templates}) non o queremos, xa está incluido no github
+de KiCAD.
+
+Descarregamos o outro e descomprimimos no directorio donde imos ter as
+bibliotecas de KiCAD, no noso caso:
+\textbf{\textasciitilde{}/resources/kicad/kicad\_3rd}
 
 \section{Enlaces útiles}\label{enlaces-uxfatiles}
 
@@ -391,7 +418,7 @@ usamos \emph{\textasciitilde{}/resources/kicad}
 \end{itemize}
 
 Dende o seguinte enlace podese descarregar unha biblioteca de
-compoñentes moi currada:
+compoñentes moi currada, ainda que algo anticuada:
 
 \url{git://smisioto.eu/KiCad_libs.git}
 
