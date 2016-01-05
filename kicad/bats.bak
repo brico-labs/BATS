@@ -139,7 +139,7 @@ U 1 1 5589860F
 P 6550 1100
 F 0 "U1" H 6500 850 70  0000 L BNN
 F 1 "BUZZER" H 6350 1250 70  0000 L BNN
-F 2 "Buzzers_Beepers:MagneticBuzzer_Kingstate_KCG0601" H 6500 1050 60  0001 C CNN
+F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" H 6500 1050 60  0001 C CNN
 F 3 "" H 6500 1050 60  0000 C CNN
 	1    6550 1100
 	0    1    1    0   
@@ -364,8 +364,6 @@ F 3 "" H 2600 3400 60  0000 C CNN
 	1    2600 3400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4850 4750
-NoConn ~ 4850 4850
 NoConn ~ 4850 3450
 NoConn ~ 4850 3550
 NoConn ~ 5700 2750
@@ -395,43 +393,43 @@ GND1
 $Comp
 L GND #PWR09
 U 1 1 558C28FA
-P 1900 6500
-F 0 "#PWR09" H 1900 6250 50  0001 C CNN
-F 1 "GND" H 1900 6350 50  0000 C CNN
-F 2 "" H 1900 6500 60  0000 C CNN
-F 3 "" H 1900 6500 60  0000 C CNN
-	1    1900 6500
+P 3050 7100
+F 0 "#PWR09" H 3050 6850 50  0001 C CNN
+F 1 "GND" H 3050 6950 50  0000 C CNN
+F 2 "" H 3050 7100 60  0000 C CNN
+F 3 "" H 3050 7100 60  0000 C CNN
+	1    3050 7100
 	1    0    0    -1  
 $EndComp
-Text Label 1900 6300 0    60   ~ 0
+Text Label 3050 6900 0    60   ~ 0
 GND1
 Text Label 4850 4050 2    60   ~ 0
 GND2
 $Comp
 L GND #PWR010
 U 1 1 558C3402
-P 2300 6500
-F 0 "#PWR010" H 2300 6250 50  0001 C CNN
-F 1 "GND" H 2300 6350 50  0000 C CNN
-F 2 "" H 2300 6500 60  0000 C CNN
-F 3 "" H 2300 6500 60  0000 C CNN
-	1    2300 6500
+P 3450 7100
+F 0 "#PWR010" H 3450 6850 50  0001 C CNN
+F 1 "GND" H 3450 6950 50  0000 C CNN
+F 2 "" H 3450 7100 60  0000 C CNN
+F 3 "" H 3450 7100 60  0000 C CNN
+	1    3450 7100
 	1    0    0    -1  
 $EndComp
-Text Label 2300 6300 0    60   ~ 0
+Text Label 3450 6900 0    60   ~ 0
 GND2
 $Comp
 L GND #PWR011
 U 1 1 558C5111
-P 2700 6500
-F 0 "#PWR011" H 2700 6250 50  0001 C CNN
-F 1 "GND" H 2700 6350 50  0000 C CNN
-F 2 "" H 2700 6500 60  0000 C CNN
-F 3 "" H 2700 6500 60  0000 C CNN
-	1    2700 6500
+P 3850 7100
+F 0 "#PWR011" H 3850 6850 50  0001 C CNN
+F 1 "GND" H 3850 6950 50  0000 C CNN
+F 2 "" H 3850 7100 60  0000 C CNN
+F 3 "" H 3850 7100 60  0000 C CNN
+	1    3850 7100
 	1    0    0    -1  
 $EndComp
-Text Label 2700 6300 0    60   ~ 0
+Text Label 3850 6900 0    60   ~ 0
 GND3
 Text Label 6750 3350 0    60   ~ 0
 GND3
@@ -454,17 +452,7 @@ Wire Wire Line
 Connection ~ 9100 1150
 Wire Wire Line
 	1000 2600 1000 2750
-Wire Wire Line
-	4850 4350 4200 4350
-Wire Wire Line
-	4200 4350 4200 2050
-Wire Wire Line
-	4200 2050 1000 2050
 Connection ~ 1000 2050
-Wire Wire Line
-	4300 1400 4300 6300
-Wire Wire Line
-	4300 1400 1000 1400
 Wire Wire Line
 	1000 1400 1000 1500
 Wire Wire Line
@@ -520,14 +508,6 @@ Wire Wire Line
 	7600 5650 7400 5650
 Wire Wire Line
 	7400 5650 7400 5750
-Connection ~ 4300 3850
-Wire Wire Line
-	4300 5450 7600 5450
-Wire Wire Line
-	10800 3850 10800 6300
-Wire Wire Line
-	10800 6300 4300 6300
-Connection ~ 4300 5450
 Connection ~ 2200 3850
 Connection ~ 2650 3850
 Wire Wire Line
@@ -548,25 +528,19 @@ Wire Wire Line
 Wire Wire Line
 	2600 3200 2600 3400
 Wire Wire Line
-	1900 6300 1900 6500
+	3050 6900 3050 7100
 Wire Wire Line
-	2300 6500 2300 6300
+	3450 7100 3450 6900
 Wire Wire Line
 	2200 3850 2200 4200
 Wire Wire Line
 	2650 3850 2650 4500
 Wire Wire Line
-	4850 4450 2350 4450
-Wire Wire Line
-	4850 4550 2850 4550
-Wire Wire Line
 	2850 4550 2850 4750
 Wire Wire Line
 	2850 4750 2800 4750
 Wire Wire Line
-	2700 6500 2700 6300
-Wire Wire Line
-	2200 3850 4850 3850
+	3850 7100 3850 6900
 $Comp
 L POT VR1
 U 1 1 55EA1F32
@@ -678,10 +652,6 @@ Connection ~ 9600 3850
 Wire Wire Line
 	9300 5450 9300 5600
 Connection ~ 9600 5600
-Text Label 6750 4850 0    60   ~ 0
-ARD0
-Text Label 6750 4750 0    60   ~ 0
-ARD1
 Text Label 6750 4650 0    60   ~ 0
 ARD2
 Text Label 6750 4550 0    60   ~ 0
@@ -692,12 +662,12 @@ Connection ~ 10500 4650
 Wire Wire Line
 	10500 4650 8950 4650
 Text Label 8950 4650 2    60   ~ 0
-ARD1
+AD5
 Connection ~ 10200 4700
 Wire Wire Line
 	10200 4700 8700 4700
 Text Label 8700 4700 2    60   ~ 0
-ARD0
+AD4
 Connection ~ 9900 4750
 Wire Wire Line
 	9900 4750 8450 4750
@@ -724,4 +694,42 @@ F 3 "" H 9600 4300 60  0000 C CNN
 	1    9600 4300
 	0    1    1    0   
 $EndComp
+Text Label 4850 3850 2    60   ~ 0
+VCC
+NoConn ~ 6750 4750
+NoConn ~ 6750 4850
+Text Label 4850 4750 2    60   ~ 0
+AD4
+Text Label 4850 4850 2    60   ~ 0
+AD5
+Wire Wire Line
+	1925 3850 2650 3850
+Text Label 1925 3850 2    60   ~ 0
+VCC
+Text Label 1000 1400 0    60   ~ 0
+VCC
+Wire Wire Line
+	7600 5450 7500 5450
+Text Label 7500 5450 2    60   ~ 0
+VCC
+Text Label 10800 3850 0    60   ~ 0
+VCC
+Wire Wire Line
+	1000 2050 1300 2050
+Text Label 1300 2050 0    60   ~ 0
+AD0
+Text Label 4850 4350 2    60   ~ 0
+AD0
+Wire Wire Line
+	2350 4450 3075 4450
+Wire Wire Line
+	2850 4550 3075 4550
+Text Label 3075 4450 0    60   ~ 0
+AD1
+Text Label 3075 4550 0    60   ~ 0
+AD2
+Text Label 4850 4450 2    60   ~ 0
+AD1
+Text Label 4850 4550 2    60   ~ 0
+AD2
 $EndSCHEMATC
