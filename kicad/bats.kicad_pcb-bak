@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.8128)
+    (last_trace_width 0.3048)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
     (user_trace_width 0.508)
@@ -225,11 +225,11 @@
     )
   )
 
-  (module FT:ARDUINO_SHIELD locked (layer F.Cu) (tedit 0) (tstamp 568AF11F)
+  (module FT:ARDUINO_SHIELD locked (layer F.Cu) (tedit 56A6A2A2) (tstamp 568AF11F)
     (at 126.95936 137.80008)
     (descr http://www.thingiverse.com/thing:9630)
     (path /55897B99)
-    (fp_text reference SHIELD1 (at 3.02768 -14.01572 90) (layer F.SilkS)
+    (fp_text reference BATS (at 3.02768 -14.01572 90) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
     (fp_text value ARDUINO_SHIELD (at 10.16 -54.61) (layer F.SilkS) hide
@@ -1354,7 +1354,7 @@
   (gr_text AD0 (at 151.34844 130.95732) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "by BricoLabs" (at 132.90296 106.1466 360) (layer F.SilkS)
+  (gr_text "by BricoLabs" (at 132.90296 106.1466) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (gr_line (start 126.8222 137.922) (end 126.8222 84.9884) (angle 90) (layer Edge.Cuts) (width 0.1))

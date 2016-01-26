@@ -3,7 +3,7 @@
   (general
     (links 67)
     (no_connects 1)
-    (area 126.772199 84.227199 195.731601 137.972001)
+    (area 120.578066 81.31048 196.085461 138.40568)
     (thickness 1.6)
     (drawings 31)
     (tracks 123)
@@ -95,11 +95,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 2)
+      (outputformat 1)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ../exports/BATS.svg/))
+      (outputdirectory ../exports/BATS.grb/))
   )
 
   (net 0 "")
