@@ -1,6 +1,72 @@
+\documentclass[12pt,galician,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[]{Source Sans Pro}
+    \setmonofont[Mapping=tex-ansi]{Source Code Pro}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[a4paper]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={BATS: BricoLabs Arduino Training Shield (con kicad)},
+            pdfauthor={BricoLabs},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=galician]{babel}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage[]{galician}
+\fi
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\title{BATS: BricoLabs Arduino Training Shield (con kicad)}
+\author{BricoLabs}
+\date{20 de xunio de 2015}
+
+\begin{document}
+\maketitle
+
 \begin{description}
 \item[NOTA IMPORTANTE]
-Lee a sección \hyperref[meta]{META} para clonar este proxecto.
+Lee a sección \protect\hyperlink{meta}{META} para clonar este proxecto.
 \end{description}
 
 \section{Qué imos facer? Qué se describe en este
@@ -56,7 +122,7 @@ cambiar de shield.
 Estes son os compoñentes que se pensan incluír:
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item
   3-4 x Botóns
 \item
@@ -120,7 +186,7 @@ O directorio \textbf{bats} será o ``repositorio'' ou depósito do noso
 proxecto para git. Contén os seguintes subdirectorios:
 
 \begin{description}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item[doc]
 Contén a documentación do proxecto (o que estás a leer agora mesmo)
 redactada en \href{http://pandoc.org/}{Pandoc}
@@ -270,7 +336,7 @@ que na pestaña \emph{Project Specific Libraries} figura o noso ficheiro.
 proxecto}\label{checklist-pasos-a-seguir-para-rematar-o-proxecto}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item
   Abrir o proxecto (e mellor tér un directorio dedicado ao proxecto
   creado en adianto)
@@ -301,13 +367,19 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 \subsection{Abrindo un proxecto}\label{abrindo-un-proxecto}
 
+\subsubsection{Checklist}\label{checklist}
+
+\begin{itemize}
+\tightlist
+\item
+  Usar un directorio adicado ao proxecto
+\item
+  Engadir a información do proxecto ao esquema.
+\end{itemize}
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N) \textbf{bats}
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-falar das propiedades do documento
-
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+\subsubsection{}\label{section}
 
 \subsection{Crear e Editar o esquema do
 circuito}\label{crear-e-editar-o-esquema-do-circuito}
@@ -327,12 +399,12 @@ circuito}\label{erc-comprobaciuxf3n-dos-erros-no-circuito}
 \subsubsection{Tips}\label{tips}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item
   Falar dos flags
 
   \begin{itemize}
-  \itemsep1pt\parskip0pt\parsep0pt
+  \tightlist
   \item
     Power flags
   \item
@@ -350,7 +422,7 @@ Esta é sen dúbida a parte de KiCAD mais criticada. Hai varias razóns
 para isto:
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item
   As bibliotecas de KiCAD manteñen separados os símbolos dos compoñentes
   para usar no esquema do circuito das pegadas (\emph{footprints}) dos
@@ -406,7 +478,7 @@ bibliotecas de KiCAD, no noso caso:
 \section{Enlaces útiles}\label{enlaces-uxfatiles}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+\tightlist
 \item
   \href{http://www.pcb.electrosoft.cl/04-articulos-circuitos-impresos-desarrollo-sistemas/01-conceptos-circuitos-impresos/conceptos-circuitos-impresos-pcb.html}{Conceptos
   de circuitos impresos}
@@ -422,7 +494,7 @@ compoñentes moi currada, ainda que algo anticuada:
 
 \url{git://smisioto.eu/KiCad_libs.git}
 
-\hyperdef{}{meta}{\section{META}\label{meta}}
+\hypertarget{meta}{\section{META}\label{meta}}
 
 Este repositorio usa submódulos de git para a xestión das bibliotecas de
 compoñentes. Para clonar o repositorio tes que clonar o repositorio e
@@ -453,3 +525,5 @@ $ ./makeDoc
 
 É importante cambiar ao directorio doc antes de executar o
 \textbf{makeDoc}.
+
+\end{document}

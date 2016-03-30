@@ -165,15 +165,14 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 
 == Abrindo un proxecto ==
 
+=== Checklist ===
+
+* Usar un directorio adicado ao proxecto
+* Engadir a información do proxecto ao esquema.
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N) '''bats'''
 
-
------
-
-falar das propiedades do documento
-
-
------
+===  ===
 
 == Crear e Editar o esquema do circuito ==
 

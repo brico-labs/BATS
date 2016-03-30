@@ -138,7 +138,7 @@ Se queres saber mais de esta potente funcionalidade de git podes leer: <http://w
 Configurar *Eescheme* para usar a nova biblioteca
 -------------------------------------------------
 
-No menú Preferences -\> Component Library sinalamos na fiestra inferior o directorio do noso proxecto. Na fiestra superior engadimos o ficheiro da biblioteca.
+No menú Preferences -&gt; Component Library sinalamos na fiestra inferior o directorio do noso proxecto. Na fiestra superior engadimos o ficheiro da biblioteca.
 
 No github da biblioteca nos aconsellan poñer a biblioteca de primeira na nosa lista por que definen todo tipo de compoñentes. Nos de momento seguimos o consello de Freetronics, e a puxemos de primeira.
 
@@ -165,7 +165,7 @@ Engadimos o novo ficheiro ao noso repositorio
 git add fp-lib-table
 ```
 
-Abrimos *Pcbnew* e no menú *Preferences-\>Footprint Libraries Manager* comprobamos que na pestaña *Project Specific Libraries* figura o noso ficheiro.
+Abrimos *Pcbnew* e no menú *Preferences-&gt;Footprint Libraries Manager* comprobamos que na pestaña *Project Specific Libraries* figura o noso ficheiro.
 
 Tutorial
 ========
@@ -193,13 +193,14 @@ Pantalla xeral de KiCad opcións, citar a lista de hotkeys
 Abrindo un proxecto
 -------------------
 
+### Checklist
+
+-   Usar un directorio adicado ao proxecto
+-   Engadir a información do proxecto ao esquema.
+
 Abrimos un novo proxecto: File::New Project (Ctrl+N) **bats**
 
-------------------------------------------------------------------------
-
-falar das propiedades do documento
-
-------------------------------------------------------------------------
+### 
 
 Crear e Editar o esquema do circuito
 ------------------------------------
