@@ -400,13 +400,19 @@ saída son este fichero __README.md__ en formato Markdown-github e os
 documentos que podes atopar no directorio __doc/out__ incluindo un
 pdf.
 
-Os documentos xeneranse automáticamente a partir do ficheiro fonte sen
+Os documentos xéranse automáticamente a partir do ficheiro fonte sen
 mais que executar:
 
 ~~~~{bash}
 $ cd doc
-$ ./makeDoc
+$ make
 ~~~~
 
-É importante cambiar ao directorio doc antes de executar o
-__makeDoc__.
+Outras opcións que soporta o __makefile__ serían __reset__ para
+rexerar todos os documentos de saída por defecto, __odt__ para xerar
+un __bats_gl.odt__.
+
+~~~~{bash}
+$ make reset
+$ make odt
+~~~~

@@ -278,14 +278,19 @@ Este documento está escrito en [Markdown-Pandoc](http://pandoc.org/README.html)
 
 As fontes do documento están no directorio **doc/src**. Os formatos de saída son este fichero **README.md** en formato Markdown-github e os documentos que podes atopar no directorio **doc/out** incluindo un pdf.
 
-Os documentos xeneranse automáticamente a partir do ficheiro fonte sen mais que executar:
+Os documentos xéranse automáticamente a partir do ficheiro fonte sen mais que executar:
 
 ``` {bash}
 $ cd doc
-$ ./makeDoc
+$ make
 ```
 
-É importante cambiar ao directorio doc antes de executar o **makeDoc**.
+Outras opcións que soporta o **makefile** serían **reset** para rexerar todos os documentos de saída por defecto, **odt** para xerar un **bats\_gl.odt**.
+
+``` {bash}
+$ make reset
+$ make odt
+```
 
 [1] EDA suite en inglés
 

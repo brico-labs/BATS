@@ -515,15 +515,21 @@ de saída son este fichero \textbf{README.md} en formato Markdown-github
 e os documentos que podes atopar no directorio \textbf{doc/out}
 incluindo un pdf.
 
-Os documentos xeneranse automáticamente a partir do ficheiro fonte sen
+Os documentos xéranse automáticamente a partir do ficheiro fonte sen
 mais que executar:
 
 \begin{verbatim}
 $ cd doc
-$ ./makeDoc
+$ make
 \end{verbatim}
 
-É importante cambiar ao directorio doc antes de executar o
-\textbf{makeDoc}.
+Outras opcións que soporta o \textbf{makefile} serían \textbf{reset}
+para rexerar todos os documentos de saída por defecto, \textbf{odt} para
+xerar un \textbf{bats\_gl.odt}.
+
+\begin{verbatim}
+$ make reset
+$ make odt
+\end{verbatim}
 
 \end{document}
