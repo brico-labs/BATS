@@ -1,0 +1,28 @@
+Drill report for /home/salvari/work/repos/BricoLabs/bats/kicad/bats.kicad_pcb
+Created on dom 03 abr 2016 17:36:18 CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'bats.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,80mm  0,032"  (4 holes)
+    T2  0,81mm  0,032"  (6 holes)
+    T3  1,00mm  0,039"  (6 holes)
+    T4  1,00mm  0,039"  (28 holes)
+    T5  1,02mm  0,040"  (65 holes)
+    T6  2,20mm  0,087"  (4 holes)
+
+    Total plated holes count 113
+
+
+Drill file 'bats-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3,17mm  0,125"  (4 holes)
+
+    Total unplated holes count 4
