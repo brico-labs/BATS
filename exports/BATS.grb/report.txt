@@ -1,7 +1,0 @@
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-F.Cu.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-B.Cu.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-B.SilkS.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-F.SilkS.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-B.Mask.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-F.Mask.gbr' created.
-Plot file '/home/salvari/work/repos/BricoLabs/bats/exports/BATS.grb/bats-Edge.Cuts.gbr' created.
