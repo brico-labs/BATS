@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/salvari/work/repos/BricoLabs/BATS/kicad/bats.sch)
-    (date "dom 01 may 2016 01:10:25 CEST")
-    (tool "Eeschema 0.201604271216+6712~44~ubuntu14.04.1-product")
+    (date "sáb 14 may 2016 21:57:55 CEST")
+    (tool "Eeschema 4.1.0-alpha+201605121532+6803~44~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "BATS: BricoLabs Arduino Training Shield")
@@ -17,7 +17,7 @@
   (components
     (comp (ref LED3)
       (value "Green LED")
-      (footprint FT:LED-3MM)
+      (footprint FT:LED-5MM)
       (libsource (lib freetronics_schematic) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 55898085))
@@ -29,7 +29,7 @@
       (tstamp 55898121))
     (comp (ref LED2)
       (value "Yellow LED")
-      (footprint FT:LED-3MM)
+      (footprint FT:LED-5MM)
       (libsource (lib freetronics_schematic) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 55898212))
@@ -41,7 +41,7 @@
       (tstamp 55898218))
     (comp (ref LED1)
       (value "Red LED")
-      (footprint FT:LED-3MM)
+      (footprint FT:LED-5MM)
       (libsource (lib freetronics_schematic) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 55898313))
@@ -325,10 +325,10 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive)))))
   (libraries
-    (library (logical freetronics_schematic)
-      (uri /home/salvari/work/repos/BricoLabs/BATS/kicad/ftlibrary/freetronics_schematic.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical freetronics_schematic)
+      (uri /home/salvari/work/repos/BricoLabs/BATS/kicad/ftlibrary/freetronics_schematic.lib)))
   (nets
     (net (code 1) (name "Net-(SHIELD1-PadSP5)")
       (node (ref SHIELD1) (pin SP5)))
