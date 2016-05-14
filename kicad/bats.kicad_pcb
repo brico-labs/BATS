@@ -3,7 +3,7 @@
   (general
     (links 67)
     (no_connects 0)
-    (area 126.772199 84.227199 195.731601 137.972001)
+    (area 120.578067 81.661 196.085461 138.40568)
     (thickness 1.6)
     (drawings 30)
     (tracks 118)
@@ -76,7 +76,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFEF7F)
     (pcbplotparams
-      (layerselection 0x010f0_ffffffff)
+      (layerselection 0x011f0_ffffffff)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -98,7 +98,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory /home/salvari/work/repos/BricoLabs/BATS/exports/BATS.grb/))
+      (outputdirectory /home/salvari/work/repos/BricoLabs/BATS/exports/BATS.svg/SVG_color/))
   )
 
   (net 0 "")
@@ -337,11 +337,11 @@
       (net 37 /AD4))
   )
 
-  (module Symbols:Symbol_OSHW-Logo_SilkScreen (layer F.Cu) (tedit 568B0A59) (tstamp 5647F855)
+  (module Symbols:Symbol_OSHW-Logo_SilkScreen (layer F.Cu) (tedit 5737947F) (tstamp 5647F855)
     (at 132.53212 98.8568)
     (descr "Symbol, OSHW-Logo, Silk Screen,")
     (tags "Symbol, OSHW-Logo, Silk Screen,")
-    (fp_text reference "BATS v 2.0" (at 0.02032 5.28828) (layer F.SilkS)
+    (fp_text reference "BATS v 2.1" (at 0.02032 5.28828) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Symbol_OSHW-Logo_SilkScreen (at 0.30988 6.56082) (layer F.Fab)
