@@ -573,8 +573,6 @@ ARD7
 Text Label 6750 3950 0    60   ~ 0
 ARD8
 NoConn ~ 6750 3550
-Text Label 6750 4350 0    60   ~ 0
-ARD5
 Text Label 7400 5550 2    60   ~ 0
 ARD5
 $Comp
@@ -615,7 +613,7 @@ Connection ~ 10500 4650
 Wire Wire Line
 	10500 4650 8950 4650
 Text Label 8950 4650 2    60   ~ 0
-AD5
+ARD2
 Connection ~ 9900 4750
 Wire Wire Line
 	9900 4750 8450 4750
@@ -625,15 +623,11 @@ Connection ~ 9300 4850
 Wire Wire Line
 	9300 4850 7950 4850
 Text Label 7950 4850 2    60   ~ 0
-ARD2
+ARD3
 Text Label 4850 3850 2    60   ~ 0
 VCC
 NoConn ~ 6750 4750
 NoConn ~ 6750 4850
-Text Label 4850 4750 2    60   ~ 0
-AD4
-Text Label 4850 4850 2    60   ~ 0
-AD5
 Wire Wire Line
 	1925 3850 2650 3850
 Text Label 1925 3850 2    60   ~ 0
@@ -664,4 +658,8 @@ Text Label 4850 4450 2    60   ~ 0
 AD1
 Text Label 4850 4550 2    60   ~ 0
 AD2
+NoConn ~ 4850 4750
+NoConn ~ 4850 4850
+Text Label 6750 4350 0    60   ~ 0
+ARD5
 $EndSCHEMATC
