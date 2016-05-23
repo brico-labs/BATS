@@ -167,17 +167,6 @@ F 3 "" H 6400 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
-U 1 1 558AE59A
-P 9600 5200
-F 0 "R10" V 9680 5200 50  0000 C CNN
-F 1 "10K" V 9600 5200 50  0000 C CNN
-F 2 "extra:Resistor_Horizontal_SmallHole_RM10mm" H 9600 5200 60  0001 C CNN
-F 3 "" H 9600 5200 60  0000 C CNN
-	1    9600 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L SW_PUSHBUTTON SW4
 U 1 1 558AEB11
 P 9900 4300
@@ -197,28 +186,6 @@ F 1 "10K" V 9900 5200 50  0000 C CNN
 F 2 "extra:Resistor_Horizontal_SmallHole_RM10mm" H 9900 5200 60  0001 C CNN
 F 3 "" H 9900 5200 60  0000 C CNN
 	1    9900 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSHBUTTON SW5
-U 1 1 558AEBB0
-P 10200 4300
-F 0 "SW5" H 10050 4410 50  0000 C CNN
-F 1 "DOWN" H 10200 4220 50  0000 C CNN
-F 2 "FT:SW_PUSHBUTTON_PTH" H 10200 4300 60  0001 C CNN
-F 3 "" H 10200 4300 60  0000 C CNN
-	1    10200 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L R R12
-U 1 1 558AEBB6
-P 10200 5200
-F 0 "R12" V 10280 5200 50  0000 C CNN
-F 1 "10K" V 10200 5200 50  0000 C CNN
-F 2 "extra:Resistor_Horizontal_SmallHole_RM10mm" H 10200 5200 60  0001 C CNN
-F 3 "" H 10200 5200 60  0000 C CNN
-	1    10200 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -458,17 +425,11 @@ Wire Wire Line
 Wire Wire Line
 	6400 1150 6400 1450
 Wire Wire Line
-	9600 4600 9600 4950
-Wire Wire Line
 	9900 4600 9900 4950
-Wire Wire Line
-	10200 4600 10200 4950
 Wire Wire Line
 	10500 4600 10500 4950
 Wire Wire Line
 	9900 3850 9900 4000
-Wire Wire Line
-	10200 3850 10200 4000
 Connection ~ 9900 3850
 Wire Wire Line
 	10500 3850 10500 4000
@@ -477,18 +438,12 @@ Connection ~ 10500 3850
 Wire Wire Line
 	9300 3850 10800 3850
 Wire Wire Line
-	9600 3850 9600 4000
-Wire Wire Line
-	9600 5450 9600 5600
-Wire Wire Line
 	9300 5600 10500 5600
 Wire Wire Line
 	10500 5600 10500 5450
 Wire Wire Line
 	9900 5450 9900 5750
 Connection ~ 9900 5600
-Wire Wire Line
-	10200 5450 10200 5600
 Connection ~ 10200 5600
 Wire Wire Line
 	9250 2700 9500 2700
@@ -648,10 +603,8 @@ Wire Wire Line
 	9300 4600 9300 4950
 Wire Wire Line
 	9300 4000 9300 3850
-Connection ~ 9600 3850
 Wire Wire Line
 	9300 5450 9300 5600
-Connection ~ 9600 5600
 Text Label 6750 4650 0    60   ~ 0
 ARD2
 Text Label 6750 4550 0    60   ~ 0
@@ -663,37 +616,16 @@ Wire Wire Line
 	10500 4650 8950 4650
 Text Label 8950 4650 2    60   ~ 0
 AD5
-Connection ~ 10200 4700
-Wire Wire Line
-	10200 4700 8700 4700
-Text Label 8700 4700 2    60   ~ 0
-AD4
 Connection ~ 9900 4750
 Wire Wire Line
 	9900 4750 8450 4750
 Text Label 8450 4750 2    60   ~ 0
 ARD4
-Connection ~ 9600 4800
-Wire Wire Line
-	9600 4800 8200 4800
-Text Label 8200 4800 2    60   ~ 0
-ARD3
 Connection ~ 9300 4850
 Wire Wire Line
 	9300 4850 7950 4850
 Text Label 7950 4850 2    60   ~ 0
 ARD2
-$Comp
-L SW_PUSHBUTTON SW3
-U 1 1 5589867E
-P 9600 4300
-F 0 "SW3" H 9450 4410 50  0000 C CNN
-F 1 "UP" H 9600 4220 50  0000 C CNN
-F 2 "FT:SW_PUSHBUTTON_PTH" H 9600 4300 60  0001 C CNN
-F 3 "" H 9600 4300 60  0000 C CNN
-	1    9600 4300
-	0    1    1    0   
-$EndComp
 Text Label 4850 3850 2    60   ~ 0
 VCC
 NoConn ~ 6750 4750

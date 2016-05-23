@@ -77,7 +77,7 @@
     (visible_elements FFFFEF7F)
     (pcbplotparams
       (layerselection 0x011f0_ffffffff)
-      (usegerberextensions true)
+      (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -98,7 +98,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory /home/salvari/work/repos/BricoLabs/BATS/exports/protel/))
+      (outputdirectory /home/salvari/work/repos/BricoLabs/BATS/exports/BATS.svg/SVG_color/))
   )
 
   (net 0 "")
