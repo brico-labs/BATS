@@ -139,12 +139,11 @@ As bibliotecas de KiCad están organizadas en duas partes:
   ter a pista da placa de circuito impreso (_PCB_) para poder soldar o
   compoñente.
 
+O KiCad trae por defecto varios templates que permiten o desenrolo de
+proxectos baseados en diferentes modelos de Arduino.
 
-O KiCad non trae por defecto unha biblioteca de compoñentes que inclúa
-shields de Arduino. Pero non hai problema hai bibliotecas que podemos
-descarregar da rede.
-
-
+Nos optamos por outro camiño, instalamos unha nova biblioteca de
+compoñentes e fixemos o proxecto usando esta biblioteca.
 
 Unha biblioteca moi completa é a de Freetronics que podemos atopar
 tamén en github en:
@@ -184,6 +183,7 @@ Dende o directorio principal de noso proxecto descarregamos a
 biblioteca de Freetronics coma un submodulo do noso proxecto:
 
 ~~~{bash}
+cd kicad 
 git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary
 ~~~
 

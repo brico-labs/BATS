@@ -24,8 +24,8 @@
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \usepackage[a4paper]{geometry}
-\usepackage{hyperref}
-\hypersetup{unicode=true,
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
             pdftitle={BATS: BricoLabs Arduino Training Shield (con kicad)},
             pdfauthor={BricoLabs},
             pdfborder={0 0 0},
@@ -218,9 +218,11 @@ As bibliotecas de KiCad están organizadas en duas partes:
   soldar o compoñente.
 \end{itemize}
 
-O KiCad non trae por defecto unha biblioteca de compoñentes que inclúa
-shields de Arduino. Pero non hai problema hai bibliotecas que podemos
-descarregar da rede.
+O KiCad trae por defecto varios templates que permiten o desenrolo de
+proxectos baseados en diferentes modelos de Arduino.
+
+Nos optamos por outro camiño, instalamos unha nova biblioteca de
+compoñentes e fixemos o proxecto usando esta biblioteca.
 
 Unha biblioteca moi completa é a de Freetronics que podemos atopar tamén
 en github en:
@@ -262,6 +264,7 @@ Dende o directorio principal de noso proxecto descarregamos a biblioteca
 de Freetronics coma un submodulo do noso proxecto:
 
 \begin{verbatim}
+cd kicad 
 git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary
 \end{verbatim}
 

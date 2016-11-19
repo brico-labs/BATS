@@ -82,7 +82,9 @@ As bibliotecas de KiCad están organizadas en duas partes:
 * Un ficheiro que contén os símbolos dos compoñentes para usarse no editor de esquemas electrónicos '''Eescheme'''
 * As pegadas dos compoñentes electrónicos, é dicir, a forma que ten que ter a pista da placa de circuito impreso (''PCB'') para poder soldar o compoñente.
 
-O KiCad non trae por defecto unha biblioteca de compoñentes que inclúa shields de Arduino. Pero non hai problema hai bibliotecas que podemos descarregar da rede.
+O KiCad trae por defecto varios templates que permiten o desenrolo de proxectos baseados en diferentes modelos de Arduino.
+
+Nos optamos por outro camiño, instalamos unha nova biblioteca de compoñentes e fixemos o proxecto usando esta biblioteca.
 
 Unha biblioteca moi completa é a de Freetronics que podemos atopar tamén en github en:
 
@@ -100,7 +102,8 @@ Se no futuro nos interesa actualizarnos a unha versión mais avanzada da librer�
 
 Dende o directorio principal de noso proxecto descarregamos a biblioteca de Freetronics coma un submodulo do noso proxecto:
 
-<pre class="{bash}">git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary</pre>
+<pre class="{bash}">cd kicad 
+git submodule add https://github.com/freetronics/freetronics_kicad_library.git kicad/ftlibrary</pre>
 Despois de engadir a biblioteca como un submódulo se consultamos o estado git do noso proxecto aparecerán dous novos ficheiros:
 
 <pre class="{bash}">$ git status
