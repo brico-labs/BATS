@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.1.0-alpha+201606160817+6936~45~ubuntu14.04.1-product)
+(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-2~bpo8+1-stable)
 
   (general
     (links 61)
@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.3048)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
     (user_trace_width 0.508)
@@ -76,7 +76,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFEF7F)
     (pcbplotparams
-      (layerselection 0x011f0_ffffffff)
+      (layerselection 0x011f0_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -87,6 +87,7 @@
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15)
+      (hpglpenoverlay 2)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -98,7 +99,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ../exports/protel/))
+      (outputdirectory ../doc/src/KiCAD_exports/PCB/exportProtel/))
   )
 
   (net 0 "")
