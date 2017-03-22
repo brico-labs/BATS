@@ -1,3 +1,6 @@
 [submodule "kicad/ftlibrary"]
 	path = kicad/ftlibrary
 	url = https://github.com/freetronics/freetronics_kicad_library.git
+[submodule "kicad/bl_kicad"]
+	path = kicad/bl_kicad
+	url = https://github.com/brico-labs/bl_kicad_library

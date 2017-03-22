@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/salvari/work/repos/BricoLabs/BATS/kicad/bats.sch)
-    (date "mar 24 may 2016 18:59:31 CEST")
-    (tool "Eeschema 4.1.0-alpha+201605180746+6813~44~ubuntu14.04.1-product")
+    (source /home/salvari/work/repos/bricolabs/BATS/kicad/bats.sch)
+    (date "Tue 21 Mar 2017 10:34:54 PM CET")
+    (tool "Eeschema 4.0.5+dfsg1-4~bpo8+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "BATS: BricoLabs Arduino Training Shield")
@@ -131,13 +131,13 @@
       (tstamp 558B73E7))
     (comp (ref VR1)
       (value POT)
-      (footprint FT:POT_RV09_VERT)
+      (footprint bl_kicad:POT_RV09_VERT_easySoldering)
       (libsource (lib freetronics_schematic) (part POT))
       (sheetpath (names /) (tstamps /))
       (tstamp 55EA1F32))
     (comp (ref VR2)
       (value POT)
-      (footprint FT:POT_RV09_VERT)
+      (footprint bl_kicad:POT_RV09_VERT_easySoldering)
       (libsource (lib freetronics_schematic) (part POT))
       (sheetpath (names /) (tstamps /))
       (tstamp 55EA2018))
@@ -326,7 +326,7 @@
         (pin (num 2) (name 2) (type passive)))))
   (libraries
     (library (logical freetronics_schematic)
-      (uri /home/salvari/work/repos/BricoLabs/BATS/kicad/ftlibrary/freetronics_schematic.lib))
+      (uri /home/salvari/work/repos/bricolabs/BATS/kicad/ftlibrary/freetronics_schematic.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib)))
   (nets
