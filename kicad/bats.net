@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/salvari/work/repos/bricolabs/BATS/kicad/bats.sch)
-    (date "Sat 23 Sep 2017 08:15:47 PM CEST")
+    (date "Wed 27 Sep 2017 07:11:35 PM CEST")
     (tool "Eeschema 4.0.5+dfsg1-4~bpo8+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -95,7 +95,7 @@
       (tstamp 558AEBC3))
     (comp (ref LED4)
       (value LED_RGB_COM_K)
-      (footprint FT:LED-RGB-8MM-COM-K-MINIMAL)
+      (footprint bl_kicad:LED-RGB-8MM-COM-K-MINIMAL_easy_soldering)
       (libsource (lib freetronics_schematic) (part LED_RGB_COM_K))
       (sheetpath (names /) (tstamps /))
       (tstamp 558B07DB))
@@ -325,10 +325,10 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive)))))
   (libraries
-    (library (logical freetronics_schematic)
-      (uri /home/salvari/work/repos/bricolabs/BATS/kicad/ftlibrary/freetronics_schematic.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical freetronics_schematic)
+      (uri /home/salvari/work/repos/bricolabs/BATS/kicad/ftlibrary/freetronics_schematic.lib)))
   (nets
     (net (code 1) (name "Net-(SHIELD1-PadSCL)")
       (node (ref SHIELD1) (pin SCL)))
