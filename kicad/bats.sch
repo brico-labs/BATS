@@ -38,8 +38,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "BATS: BricoLabs Arduino Training Shield"
-Date "2016-01-05"
-Rev "2.0"
+Date "2017-09-27"
+Rev "3.0"
 Comp "BricoLabs"
 Comment1 ""
 Comment2 ""
@@ -228,7 +228,7 @@ U 1 1 558B07DB
 P 9700 2700
 F 0 "LED4" H 9550 2800 50  0000 C CNN
 F 1 "LED_RGB_COM_K" H 9750 2300 50  0000 C CNN
-F 2 "FT:LED-RGB-8MM-COM-K-MINIMAL" H 9700 2700 60  0001 C CNN
+F 2 "bl_kicad:LED-RGB-8MM-COM-K-MINIMAL_easy_soldering" H 9700 2700 60  0001 C CNN
 F 3 "" H 9700 2700 60  0000 C CNN
 	1    9700 2700
 	1    0    0    -1  
