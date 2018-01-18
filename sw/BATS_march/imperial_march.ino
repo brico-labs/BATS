@@ -1,6 +1,3 @@
-#define R_PING 10
-#define L_PING 11
-
 int speakerPin=13;
 #define c 261
 #define d 294
