@@ -6,7 +6,7 @@ class sapoconcho {
     sapoconcho();
     void brake(int t);
     void drive(int l, int r, int t);
-    long sontar(int trigger);
+    long sontar(int trig);
 }; 
 
 #endif
